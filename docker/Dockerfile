@@ -15,8 +15,14 @@ RUN apt-get update \
         libpng-dev \
         python3 \
         python3-pil \
+        python3-venv \
         ripgrep \
     && rm -rf /var/lib/apt/lists/*
+
+# Commitizen for conventional commit messages (cz commit / cz check).
+RUN python3 -m venv /opt/commitizen \
+    && /opt/commitizen/bin/pip install --no-cache-dir commitizen==4.19.0 \
+    && ln -s /opt/commitizen/bin/cz /usr/local/bin/cz
 
 RUN groupadd --gid ${USER_GID} ${USERNAME} \
     && useradd --uid ${USER_UID} --gid ${USER_GID} --create-home --shell /bin/bash ${USERNAME}
