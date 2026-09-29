@@ -18,6 +18,26 @@ const u8 gMonIcon_QuestionMark[] = INCGFX_U8("graphics/pokemon/question_mark/ico
 #endif //P_FOOTPRINTS
 const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_mark/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 
+#if OW_POKEMON_OBJECT_EVENTS
+const u32 gObjectEventPic_Agumon[] = INCGFX_COMP("graphics/pokemon/agumon/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+const u16 gOverworldPalette_Agumon[] = INCGFX_U16("graphics/pokemon/agumon/overworld_normal.pal", ".gbapal");
+const u16 gShinyOverworldPalette_Agumon[] = INCGFX_U16("graphics/pokemon/agumon/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+const u32 gMonFrontPic_Agumon[] = INCGFX_U32("graphics/pokemon/agumon/front.png", ".4bpp.lz");
+const u16 gMonPalette_Agumon[] = INCGFX_U16("graphics/pokemon/agumon/front.png", ".gbapal");
+const u32 gMonBackPic_Agumon[] = INCGFX_U32("graphics/pokemon/agumon/back.png", ".4bpp.lz");
+const u16 gMonShinyPalette_Agumon[] = INCGFX_U16("graphics/pokemon/agumon/front.png", ".gbapal");
+const u8 gMonIcon_Agumon[] = INCGFX_U8("graphics/pokemon/agumon/icon.png", ".4bpp");
+const u32 gMonFrontPic_Greymon[] = INCGFX_U32("graphics/pokemon/greymon/front.png", ".4bpp.lz");
+const u32 gMonBackPic_Greymon[] = INCGFX_U32("graphics/pokemon/greymon/back.png", ".4bpp.lz");
+const u16 gMonPalette_Greymon[] = INCGFX_U16("graphics/pokemon/greymon/front.png", ".gbapal");
+const u16 gMonShinyPalette_Greymon[] = INCGFX_U16("graphics/pokemon/greymon/front.png", ".gbapal");
+const u8 gMonIcon_Greymon[] = INCGFX_U8("graphics/pokemon/greymon/icon.png", ".4bpp");
+#include "digimon_rookies.h"
+#include "digimon_roster.h"
+
 #if P_FAMILY_BULBASAUR
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Bulbasaur[] = INCGFX_U32("graphics/pokemon/bulbasaur/anim_front.png", ".4bpp.smol");

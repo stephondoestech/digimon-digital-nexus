@@ -1,0 +1,81 @@
+# Asset Sources
+
+## Expanded roster — 2026-09-14
+
+193 additional Digimon portraits and their reference stats/learnsets/evolutions
+come from [DigimonEmerald revision 75a0c3642ee14311f08d41db23da3ddf52562577](https://github.com/Luna3Step/DigimonEmerald/tree/75a0c3642ee14311f08d41db23da3ddf52562577).
+`tools/digimon_roster/manifest.json` records each exact source URL and SHA-256.
+Original portraits are retained as `graphics/pokemon/<slug>/source_front.png`.
+Lopmon uses the donor's `lopmon/a/front.png`; Dolphmon uses
+`dolphmon/front_normal_form.png`. Both were visually reviewed with the full roster.
+
+The conversion retains aspect ratio, uses nearest-neighbor resizing into 64x64,
+quantizes to 15 visible colors plus transparency, and copies front art to the
+back under the existing user-approved policy. Party icons use two 32x32 frames
+and the engine's shared icon palette 0. These are sourced community assets, not
+newly authored sprites. Existing source-credit/release requirements still apply.
+
+## Agumon Overworld Sprite
+
+The initial Agumon overworld sprite is derived from the community-provided
+`Agumon.png` in the supplied [Digimon Story Sprite Project Drive folder](https://drive.google.com/drive/folders/1EgoXHwlXNiurD4X_9WEgoyzm9OuWf_tf).
+It was downloaded on 2026-09-13 as a 48x64 RGBA PNG and retained at
+`graphics/pokemon/agumon/source.png` (SHA-256:
+`3ed6816ade1a20d6899ecfc2dca7d7b9b7633507eff5b2afbefd5f41ee13e67e`).
+
+The source is a 3x4 grid of 16x16 animation frames, not a battle portrait.
+`tools/prepare_digimon_sprite.py` selects the first six frames, scales them to
+32x32 with nearest-neighbor pixel scaling, and creates the checked-in 192x32
+4bpp overworld sheet and its normal/shiny palettes. Run it in the Dev
+Container with:
+
+```bash
+python3 tools/prepare_digimon_sprite.py
+```
+
+## Agumon Battle Sprite
+
+The Agumon battle source is `Agumon 2006 dst battle.png` from the linked Digimon
+Story sprite collection. It was downloaded as a 96x96 transparent RGBA PNG and
+retained at `graphics/pokemon/agumon/source_battle.png` (SHA-256:
+`52fe5cef5278c5e3319dd651ee9f436abe93e247f9767feb354a5e9cfaeb0971`). The
+converter crops the opaque bounds, scales them with nearest-neighbor sampling to
+48x63, centers that art on a 64x64 transparent canvas, and derives a 32x32 icon.
+
+The battle back currently reuses the verified Agumon front portrait. This is
+intentional until a proper rear-facing battle asset is approved; it avoids
+shipping a malformed reconstruction. The DigimonEmerald `back.png` reference
+is retained as research material, but its side pose is not used.
+
+Agumon now uses those generated front, back, and icon assets in battle and party
+screens. The footprint, cry, and shiny palette remain temporary placeholders.
+The source pages and their assets do not establish redistribution rights; confirm
+the applicable rights before distributing a ROM containing these assets.
+
+## Additional Adventure Rookie portraits
+
+Gabumon, Biyomon, Tentomon, Palmon, Gomamon, Patamon, and Salamon use the
+`graphics/pokemon/<name>/front.png` files from
+[DigimonEmerald revision 75a0c3642ee14311f08d41db23da3ddf52562577](https://github.com/Luna3Step/DigimonEmerald/tree/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon).
+The original downloads are retained as each species' `source_front.png`.
+These are reference-project/community assets, not newly authored artwork.
+
+`tools/prepare_rookie_sprites.py` treats palette index zero as transparent,
+preserves aspect ratio with nearest-neighbor scaling, and fits the opaque art
+inside a 64×64 battle canvas. Back portraits copy the front by the approved
+temporary policy. Icons are fitted to 32×32 and repeated into the two-frame
+32×64 layout, remapped to the existing global icon palette 0. Agumon's icon
+converter now also uses that shared palette and two-frame layout.
+
+Run both converters and `python3 tools/test_rookie_sprites.py` inside the dev
+container. Normal and shiny battle art currently share a palette. Source access
+is not a redistribution license; retain credits and resolve rights before release.
+
+## Digivice starter interface
+
+The starter screen uses original repo-native window/pixel primitives to draw
+the device casing, LCD, controls, and menu. No Poké Ball image is displayed in
+this screen. Shared upstream bag/grass/ball assets are retained because credits,
+the save-error screen, and Battle Factory still consume them. Birch's bag remains
+the overworld interaction point; its dialogue now directs the player to activate
+the Digivice inside it.

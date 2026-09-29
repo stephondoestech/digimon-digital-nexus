@@ -23,6 +23,7 @@
 #include "constants/daycare.h"
 #include "constants/decorations.h"
 #include "constants/difficulty.h"
+#include "constants/digimon.h"
 #include "constants/easy_chat.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
@@ -1165,6 +1166,7 @@ EventScript_SetBrineyLocation_Route109::
 	.include "data/scripts/obtain_item.inc"
 	.include "data/scripts/record_mix.inc"
 	.include "data/scripts/pc.inc"
+	.include "data/scripts/digimon_digilab.inc"
 	.include "data/scripts/move_relearner.inc"
 
 @ scripts/notices.inc? signs.inc? See comment about text/notices.inc

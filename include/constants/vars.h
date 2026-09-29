@@ -52,7 +52,7 @@
 #define VAR_RECYCLE_GOODS                                0x4020
 #define VAR_REPEL_STEP_COUNT                             0x4021
 #define VAR_ICE_STEP_COUNT                               0x4022
-#define VAR_STARTER_MON                                  0x4023 // 0=Treecko, 1=Torchic, 2=Mudkip
+#define VAR_STARTER_MON                                  0x4023 // 0=Agumon during Milestone 5.2.
 #define VAR_MIRAGE_RND_H                                 0x4024 // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
 #define VAR_MIRAGE_RND_L                                 0x4025 // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
 #define VAR_SECRET_BASE_MAP                              0x4026
@@ -266,14 +266,14 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
+#define VAR_DIGIMON_SCAN_AGUMON                          0x40F7 // Milestone 7 Scan Data percentage
+#define VAR_DIGIMON_RECONSTRUCTED_AGUMON                0x40F8 // Milestone 8 DigiLab result
+#define VAR_DIGIMON_PARTNER                              0x40F9 // Milestone 9 persistent Partner species
+#define VAR_DIGIMON_PARTNER_PID_LOW                      0x40FA
+#define VAR_DIGIMON_PARTNER_PID_HIGH                     0x40FB
+#define VAR_DIGIMON_PARTNER_OT_LOW                       0x40FC
+#define VAR_DIGIMON_PARTNER_OT_HIGH                      0x40FD
+#define VAR_DIGIMON_STARTER_CHOICE                       0x40FE // Eight-way choice; VAR_STARTER_MON keeps legacy rival branch
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
 #define VARS_END                                         0x40FF

@@ -233,7 +233,7 @@ VermilionCity_EventScript_Machop::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	playmoncry SPECIES_IGNITEMON, CRY_MODE_NORMAL
 	msgbox VermilionCity_Text_Machop
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat

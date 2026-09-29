@@ -20,6 +20,7 @@
 #include "bg.h"
 #include "data.h"
 #include "debug.h"
+#include "digimon_scan_data.h"
 #include "decompress.h"
 #include "dexnav.h"
 #include "dma3.h"
@@ -5300,6 +5301,9 @@ static void HandleEndTurn_FinishBattle(void)
         BeginFastPaletteFade(3);
         FadeOutMapMusic(5);
         TryRestoreHeldItems();
+
+        Digimon_RecordBattleScan(GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES),
+                                 gBattleTypeFlags, gBattleOutcome);
 
         for (u32 i = 0; i < PARTY_SIZE; i++)
         {

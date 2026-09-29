@@ -1,0 +1,11 @@
+{
+    "name": "Digimon Digital Nexus",
+    "build": {
+        "context": "../docker",
+        "dockerfile": "../docker/Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "updateRemoteUserUID": true,
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/digimon-digital-nexus,type=bind,consistency=cached",
+    "workspaceFolder": "/workspaces/digimon-digital-nexus"
+}

@@ -6,11 +6,11 @@ Route15_WestEntrance_2F_Frlg_MapScripts::
 Route15_WestEntrance_2F_EventScript_LeftBinoculars::
 	lockall
 	msgbox Route15_WestEntrance_2F_Text_LargeShiningBird
-	showmonpic SPECIES_ARTICUNO, 10, 3
+	showmonpic SPECIES_PENGUINMON, 10, 3
 	delay 20
 	waitbuttonpress
 	hidemonpic
-	setvar VAR_0x8004, SPECIES_ARTICUNO
+	setvar VAR_0x8004, SPECIES_PENGUINMON
 	special SetSeenMon
 	releaseall
 	end

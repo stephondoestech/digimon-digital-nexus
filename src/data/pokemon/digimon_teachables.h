@@ -1,0 +1,18 @@
+// Basic field techniques remain available after replacing the Pokemon population.
+static const u16 sDigimonLandTeachableLearnset[] = {
+    MOVE_CUT, MOVE_FLASH, MOVE_ROCK_SMASH, MOVE_STRENGTH,
+    MOVE_PROTECT, MOVE_REST, MOVE_RETURN, MOVE_TOXIC, MOVE_SUBSTITUTE,
+    MOVE_UNAVAILABLE,
+};
+static const u16 sDigimonWaterTeachableLearnset[] = {
+    MOVE_CUT, MOVE_FLASH, MOVE_ROCK_SMASH, MOVE_STRENGTH,
+    MOVE_SURF, MOVE_DIVE, MOVE_WATERFALL, MOVE_WATER_PULSE, MOVE_ICE_BEAM,
+    MOVE_PROTECT, MOVE_REST, MOVE_RETURN, MOVE_TOXIC, MOVE_SUBSTITUTE,
+    MOVE_UNAVAILABLE,
+};
+static const u16 sDigimonFlyingTeachableLearnset[] = {
+    MOVE_CUT, MOVE_FLASH, MOVE_ROCK_SMASH, MOVE_STRENGTH,
+    MOVE_FLY, MOVE_AERIAL_ACE,
+    MOVE_PROTECT, MOVE_REST, MOVE_RETURN, MOVE_TOXIC, MOVE_SUBSTITUTE,
+    MOVE_UNAVAILABLE,
+};

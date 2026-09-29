@@ -14,6 +14,7 @@
 #include "caps.h"
 #include "data.h"
 #include "daycare.h"
+#include "digimon_population.h"
 #include "dexnav.h"
 #include "event_data.h"
 #include "event_object_movement.h"
@@ -480,8 +481,11 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #elif P_LVL_UP_LEARNSETS >= GEN_1
 #include "data/pokemon/level_up_learnsets/gen_1.h" // Yellow
 #endif
+#include "data/pokemon/level_up_learnsets/custom.h"
+#include "data/pokemon/level_up_learnsets/digimon_roster.h"
 
 #include "data/pokemon/teachable_learnsets.h"
+#include "data/pokemon/digimon_teachables.h"
 #include "data/pokemon/egg_moves.h"
 #include "data/pokemon/form_species_tables.h"
 #include "data/pokemon/form_change_tables.h"
@@ -973,6 +977,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     u16 checksum;
     bool32 isShiny;
 
+#if !TESTING
+    species = Digimon_ResolveLegacySpecies(species, level);
+#endif
     ZeroBoxMonData(boxMon);
     // Determine original trainer ID
     if (trainerId.method == OT_ID_RANDOM_NO_SHINY)
@@ -4626,6 +4633,10 @@ enum Species NationalPokedexNumToSpecies(enum NationalDexOrder nationalNum)
 
     if (!nationalNum)
         return SPECIES_NONE;
+
+    // The new Digimon occupy legacy dex slots without growing saved flag arrays.
+    if (nationalNum >= NATIONAL_DEX_ANGORAMON && nationalNum <= NATIONAL_DEX_ROSTER_END)
+        return SPECIES_ANGORAMON + nationalNum - NATIONAL_DEX_ANGORAMON;
 
     species = 1;
 

@@ -70,9 +70,9 @@ FuchsiaCity_EventScript_GymSign::
 
 FuchsiaCity_EventScript_ChanseySign::
 	lockall
-	setvar VAR_0x8004, SPECIES_CHANSEY
+	setvar VAR_0x8004, SPECIES_SHOUTMON
 	special SetSeenMon
-	showmonpic SPECIES_CHANSEY, 10, 3
+	showmonpic SPECIES_SHOUTMON, 10, 3
 	msgbox FuchsiaCity_Text_ChanseySign
 	hidemonpic
 	releaseall
@@ -80,9 +80,9 @@ FuchsiaCity_EventScript_ChanseySign::
 
 FuchsiaCity_EventScript_VoltorbSign::
 	lockall
-	setvar VAR_0x8004, SPECIES_VOLTORB
+	setvar VAR_0x8004, SPECIES_HERISSMON
 	special SetSeenMon
-	showmonpic SPECIES_VOLTORB, 10, 3
+	showmonpic SPECIES_HERISSMON, 10, 3
 	msgbox FuchsiaCity_Text_VoltorbSign
 	hidemonpic
 	releaseall
@@ -90,9 +90,9 @@ FuchsiaCity_EventScript_VoltorbSign::
 
 FuchsiaCity_EventScript_KangaskhanSign::
 	lockall
-	setvar VAR_0x8004, SPECIES_KANGASKHAN
+	setvar VAR_0x8004, SPECIES_SHOUTMON
 	special SetSeenMon
-	showmonpic SPECIES_KANGASKHAN, 10, 3
+	showmonpic SPECIES_SHOUTMON, 10, 3
 	msgbox FuchsiaCity_Text_KangaskhanSign
 	hidemonpic
 	releaseall
@@ -100,9 +100,9 @@ FuchsiaCity_EventScript_KangaskhanSign::
 
 FuchsiaCity_EventScript_SlowpokeSign::
 	lockall
-	setvar VAR_0x8004, SPECIES_SLOWPOKE
+	setvar VAR_0x8004, SPECIES_OTAMAMON
 	special SetSeenMon
-	showmonpic SPECIES_SLOWPOKE, 10, 3
+	showmonpic SPECIES_OTAMAMON, 10, 3
 	msgbox FuchsiaCity_Text_SlowpokeSign
 	hidemonpic
 	releaseall
@@ -110,9 +110,9 @@ FuchsiaCity_EventScript_SlowpokeSign::
 
 FuchsiaCity_EventScript_LaprasSign::
 	lockall
-	setvar VAR_0x8004, SPECIES_LAPRAS
+	setvar VAR_0x8004, SPECIES_SYAKOMON
 	special SetSeenMon
-	showmonpic SPECIES_LAPRAS, 10, 3
+	showmonpic SPECIES_SYAKOMON, 10, 3
 	msgbox FuchsiaCity_Text_LaprasSign
 	hidemonpic
 	releaseall
@@ -121,18 +121,18 @@ FuchsiaCity_EventScript_LaprasSign::
 FuchsiaCity_EventScript_FossilMonSign::
 	lockall
 	goto_if_set FLAG_GOT_DOME_FOSSIL, FuchsiaCity_EventScript_OmanyteSign
-	setvar VAR_0x8004, SPECIES_KABUTO
+	setvar VAR_0x8004, SPECIES_SANGOMON
 	special SetSeenMon
-	showmonpic SPECIES_KABUTO, 10, 3
+	showmonpic SPECIES_SANGOMON, 10, 3
 	msgbox FuchsiaCity_Text_KabutoSign
 	hidemonpic
 	releaseall
 	end
 
 FuchsiaCity_EventScript_OmanyteSign::
-	setvar VAR_0x8004, SPECIES_OMANYTE
+	setvar VAR_0x8004, SPECIES_SANGOMON
 	special SetSeenMon
-	showmonpic SPECIES_OMANYTE, 10, 3
+	showmonpic SPECIES_SANGOMON, 10, 3
 	msgbox FuchsiaCity_Text_OmanyteSign
 	hidemonpic
 	releaseall

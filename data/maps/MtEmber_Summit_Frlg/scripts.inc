@@ -24,9 +24,9 @@ MtEmber_Summit_EventScript_ShowMoltres::
 MtEmber_Summit_EventScript_Moltres::
 	lock
 	faceplayer
-	setwildbattle SPECIES_MOLTRES, 50
+	setwildbattle SPECIES_MUCHOMON, 50
 	waitse
-	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MUCHOMON, CRY_MODE_ENCOUNTER
 	message Text_Gyaoo
 	waitmessage
 	waitmoncry
@@ -50,6 +50,6 @@ MtEmber_Summit_EventScript_DefeatedMoltres::
 	end
 
 MtEmber_Summit_EventScript_RanFromMoltres::
-	setvar VAR_0x8004, SPECIES_MOLTRES
+	setvar VAR_0x8004, SPECIES_MUCHOMON
 	goto EventScript_MonFlewAway
 	end

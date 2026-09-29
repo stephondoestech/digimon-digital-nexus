@@ -1,0 +1,99 @@
+# First Digital World slice → closed playtest — planned 2026-09-29
+
+Goal: testers play a 30–60 minute original slice (Village of Beginnings →
+File Island Forest → Ancient Ruins → Kuwagamon), not the Hoenn shell. Full
+scope is in PLAN.md §13.1 (Milestone 13) and §38.5 (Milestone 13.5).
+
+- [ ] 0. Commit the current Digimon work on `develop` (developer action).
+- [ ] 1. New-game entry into Village of Beginnings; starter event there; Hoenn warps locked.
+- [ ] 2. Four new maps: Village hub, Forest, Ruins (2F), Sanctum boss room.
+- [ ] 3. Import Kuwagamon, Kabuterimon, Togemon, Ikkakumon; roster-check passes.
+- [ ] 4. Lv 16 Champion evolution for all eight starters.
+- [ ] 5. Slice encounters, 4–6 Tamers, Kuwagamon Lv 18 boss, end-of-playtest scene.
+- [ ] 6. One post-boss Digivice capability.
+- [ ] 7. Scrub Pokémon text reachable in the slice, and add a slice text check.
+- [ ] 8. Runtime tests: starter evolutions, boss data, save layout unchanged.
+- [ ] 9. Developer playthroughs (three starters in full, all eight to Lv 16), with save/reload.
+- [ ] 10. Playtest gate: tag, `make release`, version on menu, full test suite.
+- [ ] 11. BPS patch built in the container; tester README, known issues, bug template, form.
+- [ ] 12. Invite 5–10 testers for 1–2 weeks; triage; write RESULTS.md; go/no-go for M14.
+
+Constraints: no SaveBlock size changes; no host installs; never distribute the ROM.
+
+# Digivice and recruitment — 2026-09-15
+
+- [x] Replace sequential messages with a scrolling, resumable 203-species guide.
+- [x] Show identity, evolution requirements, Scan Data and Partner information.
+- [x] Persist scans for 193 wild species in reserved save bytes; preserve layout.
+- [x] Reconstruct completed species once, with capacity checks and confirmation.
+- [x] Validate save compatibility, recruitment and guide navigation; rebuild ROM.
+
+The eight starters remain initial-choice/event recruits. Wild victories award
+20%; reconstruction grants Rookies at level 5 and Champions at level 24.
+Attribute combat and new world areas follow this integrated collection loop.
+
+# Attribute combat — 2026-09-15
+
+Goal: make sourced Digimon Attributes affect damaging battle moves without
+changing the existing elemental type system.
+
+- [x] Generate a checked-in Attribute table for all 193 added species.
+- [x] Apply Vaccine > Virus > Data > Vaccine damage modifiers in the shared
+  effectiveness calculation; keep Free/Unknown, status and fixed-damage neutral.
+- [x] Add focused cycle, reverse and neutral automated tests.
+- [x] Update type-system and roadmap documentation; rebuild the production ROM.
+
+# Expanded roster and population — 2026-09-14
+
+Goal: exceed 150 playable Digimon, replace the Pokemon encounter population,
+and reserve Adventure starters for the initial choice and future events.
+
+- [x] Import 193 distinct additions, producing 203 total species.
+- [x] Visually review all added portraits; validate palettes, frames and hashes.
+- [x] Populate all 6,459 wild slots; no starters, aquatic fishing, Champions 24+.
+- [x] Replace 3,451 trainer members and scripted/facility species references.
+- [x] Preserve saved field sizes by reusing 193 legacy dex slots.
+- [x] Add field-move access and deterministic legacy creation mapping.
+- [x] Expand the DigiLab Field Guide from eight starters to all 203 entries,
+  with sourced attributes and engine element labels.
+- [x] Build the production ROM; 27,450,100 ROM bytes, RAM unchanged.
+- [x] Focused runtime suites: 4 roster tests (including a 193-species battle sweep),
+  16 Agumon tests and 4 Digivice tests passed in the amd64 runner.
+- [x] Python validation: 5 roster tests and 3 existing Rookie-art tests passed.
+- [x] Final production rebuild and handoff; `pokeemerald.gba` rebuilt and
+  `git diff --check` passed.
+
+Manual mGBA story navigation and flash save/reload remain acceptance checks;
+the runtime suite validates battle turns and state layout but not a full playthrough.
+
+Decisions: preserve existing save files and creature IDs; new species append
+after Salamon. Legacy dex marks are reinterpreted, not automatically cleared.
+Starter recruitment events and milestone 10 are not added here. Existing world
+scene art and higher-stage evolution expansion remain separate content work.
+
+## Earlier eight-starter Digivice selection — 2026-09-13
+
+Goal: finish the playable scope through milestone 8 before the user's next lab
+test. Offer Agumon, Gabumon, Biyomon, Tentomon, Palmon, Gomamon, Patamon, and
+Salamon from one Digivice list, with real Digimon portraits and icons.
+
+- [x] Inspect existing milestones, species, starter scripts, and Unbound/CFRU.
+- [x] Import and validate pinned Digimon assets; keep approved front-as-back art.
+- [x] Implement the Digivice list, preview, confirmation, and all-eight grants.
+- [x] Preserve rival-script/save compatibility and existing Partner/DigiLab flow.
+- [x] Run container builds, runtime tests, and document remaining manual QA.
+
+Constraints: preserve current work; no host installs; no engine migration;
+milestones 7–8 remain the plan's one-species Agumon Scan Data prototype. Source
+asset redistribution rights remain a release concern. No milestone 10 work here.
+
+Design: retain the shared bag/grass graphics used by credits and save-error UI,
+but replace the starter screen itself. Draw the Digivice using native window
+primitives rather than changing global Poké Ball assets. All eight names remain
+visible. B cancels confirmation; a starter must be chosen to leave the rescue.
+
+Results: production build passed; 16 Agumon-system and 3 Digivice runtime tests
+passed (including all-eight UI trials); 3 Python graphics tests passed. Actual
+new-game/story navigation, visual review, and flash-save/reload remain manual.
+The fuller roadmap is not complete: Champion art, dedicated followers/audio,
+and later systems remain explicitly tracked in `docs/digimon/ROADMAP.md`.

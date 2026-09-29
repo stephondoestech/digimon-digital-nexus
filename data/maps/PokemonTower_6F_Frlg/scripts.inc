@@ -5,7 +5,7 @@ PokemonTower_6F_EventScript_MarowakGhost::
 	lockall
 	textcolor NPC_TEXT_COLOR_MON
 	msgbox PokemonTower_6F_Text_BeGoneIntruders
-	setwildbattle SPECIES_MAROWAK, 30
+	setwildbattle SPECIES_ARMADILMON, 30
 	special StartMarowakBattle
 	waitstate
 	goto_if_eq VAR_RESULT, FALSE, PokemonTower_6F_EventScript_DefeatedMarowakGhost  @ VAR_RESULT set by CB2_EndMarowakBattle
@@ -18,7 +18,7 @@ PokemonTower_6F_EventScript_DefeatedMarowakGhost::
 	message PokemonTower_6F_Text_GhostWasCubonesMother
 	waitmessage
 	waitse
-	playmoncry SPECIES_MAROWAK, CRY_MODE_NORMAL
+	playmoncry SPECIES_ARMADILMON, CRY_MODE_NORMAL
 	waitbuttonpress
 	waitmoncry
 	msgbox PokemonTower_6F_Text_MothersSpiritWasCalmed

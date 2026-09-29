@@ -5,7 +5,7 @@ SaffronCity_CopycatsHouse_2F_EventScript_Doduo::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DODUO, CRY_MODE_NORMAL
+	playmoncry SPECIES_FALCOMON, CRY_MODE_NORMAL
 	msgbox SaffronCity_CopycatsHouse_2F_Text_Doduo
 	waitmoncry
 	release

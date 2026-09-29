@@ -25,14 +25,14 @@ CeruleanCave_B1F_EventScript_Mewtwo::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_RENAMON, CRY_MODE_ENCOUNTER
 	message CeruleanCave_B1F_Text_Mew
 	waitmessage
 	waitmoncry
 	delay 20
 	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, 0
 	waitbuttonpress
-	setwildbattle SPECIES_MEWTWO, 70
+	setwildbattle SPECIES_RENAMON, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -50,7 +50,7 @@ CeruleanCave_B1F_EventScript_DefeatedMewtwo::
 	end
 
 CeruleanCave_B1F_EventScript_RanFromMewtwo::
-	setvar VAR_0x8004, SPECIES_MEWTWO
+	setvar VAR_0x8004, SPECIES_RENAMON
 	goto EventScript_MonFlewAway
 	end
 

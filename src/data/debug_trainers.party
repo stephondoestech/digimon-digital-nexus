@@ -18,7 +18,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 
-Buffie (Wobbuffet)
+SPECIES_RENAMON
 Brave Nature
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -37,7 +37,7 @@ Pic: Steven
 Gender: Male
 Music: Male
 
-Metang
+SPECIES_AURUMON
 Brave Nature
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -47,7 +47,7 @@ EVs: 252 Atk / 252 Def / 6 SpA
 - Reflect
 - Metal Claw
 
-Skarmory
+SPECIES_BLIMPMON
 Impish Nature
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -57,7 +57,7 @@ EVs: 252 HP / 6 SpA / 252 SpD
 - Protect
 - Steel Wing
 
-Aggron
+SPECIES_DECKDRAMON
 Adamant Nature
 Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe

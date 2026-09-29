@@ -4,7 +4,7 @@ SixIsland_WaterPath_House1_Frlg_MapScripts::
 SixIsland_WaterPath_House1_EventScript_Beauty::
 	lock
 	faceplayer
-	setvar VAR_0x8004, SPECIES_HERACROSS
+	setvar VAR_0x8004, SPECIES_AGUNIMON
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
 	goto_if_eq VAR_RESULT, FALSE, SixIsland_WaterPath_House1_EventScript_NoHeracrossInParty
 	special GetHeracrossSizeRecordInfo

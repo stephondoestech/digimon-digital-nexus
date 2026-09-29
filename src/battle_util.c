@@ -6,6 +6,7 @@
 #include "battle_environment.h"
 #include "battle_pyramid.h"
 #include "battle_util.h"
+#include "digimon_attribute.h"
 #include "battle_controllers.h"
 #include "battle_interface.h"
 #include "battle_setup.h"
@@ -8384,6 +8385,18 @@ uq4_12_t CalcTypeEffectivenessMultiplier(struct DamageContext *ctx)
             modifier = CalcTypeEffectivenessMultiplierInternal(ctx, modifier);
             ctx->moveType = primaryType;
         }
+    }
+
+    // Digimon Attributes are a second, independent matchup layer.  Keep the
+    // existing elemental type multiplier intact and apply the attribute bonus
+    // only to moves that actually deal damage.  Status, fixed-damage, and
+    // type-immune moves therefore retain their normal engine behavior.
+    if (modifier != UQ_4_12(0.0) && GetMovePower(ctx->move) != 0
+        && !IsBattleMoveStatus(ctx->move))
+    {
+        modifier = uq4_12_multiply(modifier,
+            Digimon_GetAttributeModifier(gBattleMons[ctx->battlerAtk].species,
+                                         gBattleMons[ctx->battlerDef].species));
     }
 
     if (ctx->updateFlags)

@@ -73,11 +73,11 @@ BirthIsland_Exterior_Frlg_EventScript_Deoxys::
 	applymovement LOCALID_BIRTH_ISLAND_DEOXYS, Movement_DeoxysApproach
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_DEOXYS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SYAKOMON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_BIRTH_ISLAND_DEOXYS
-	seteventmon SPECIES_DEOXYS, 30
+	seteventmon SPECIES_SYAKOMON, 30
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -91,12 +91,12 @@ BirthIsland_Exterior_Frlg_EventScript_Deoxys::
 
 BirthIsland_Exterior_Frlg_EventScript_DefeatedDeoxys::
 	setflag FLAG_DEOXYS_FLEW_AWAY
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_0x8004, SPECIES_SYAKOMON
 	goto EventScript_MonFlewAway
 	end
 
 BirthIsland_Exterior_Frlg_EventScript_RanFromDeoxys::
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_0x8004, SPECIES_SYAKOMON
 	goto EventScript_MonFlewAway
 	end
 

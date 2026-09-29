@@ -638,3 +638,11 @@ gSpecials::
 	def_special UpdateTrainerCardPhotoIcons
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
+	def_special Digimon_DigiLab
+	def_special Digimon_FieldGuideEntry
+	def_special Digimon_PartnerInfo
+	def_special Digimon_RegisterLeadPartner
+	def_special Digimon_GuideList
+	def_special Digimon_GuideStatus
+	def_special Digimon_GuideEvolution
+	def_special Digimon_GuideReconstruct

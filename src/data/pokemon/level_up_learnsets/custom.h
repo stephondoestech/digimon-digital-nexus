@@ -1,0 +1,96 @@
+static const struct LevelUpMove sAgumonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 5, MOVE_BITE),
+    LEVEL_UP_MOVE( 8, MOVE_EMBER),
+    LEVEL_UP_MOVE(18, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(26, MOVE_FLAMETHROWER),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sGreymonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE(16, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(22, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(30, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE(38, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(45, MOVE_CRUNCH),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sTyrannomonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE(16, MOVE_STOMP),
+    LEVEL_UP_MOVE(22, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(30, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE(38, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sGabumonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 5, MOVE_BITE),
+    LEVEL_UP_MOVE( 8, MOVE_POWDER_SNOW),
+    LEVEL_UP_MOVE(16, MOVE_ICE_SHARD),
+    LEVEL_UP_MOVE(24, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE(32, MOVE_ICE_BEAM),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBiyomonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 5, MOVE_GUST),
+    LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(17, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(25, MOVE_AIR_SLASH),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sTentomonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
+    LEVEL_UP_MOVE(17, MOVE_SPARK),
+    LEVEL_UP_MOVE(25, MOVE_SIGNAL_BEAM),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPalmonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
+    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 9, MOVE_POISON_POWDER),
+    LEVEL_UP_MOVE(17, MOVE_RAZOR_LEAF),
+    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sGomamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 5, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 9, MOVE_ICY_WIND),
+    LEVEL_UP_MOVE(17, MOVE_AQUA_JET),
+    LEVEL_UP_MOVE(25, MOVE_BRINE),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPatamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+    LEVEL_UP_MOVE(17, MOVE_AIR_CUTTER),
+    LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sSalamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_BITE),
+    LEVEL_UP_MOVE( 9, MOVE_CHARM),
+    LEVEL_UP_MOVE(17, MOVE_BABY_DOLL_EYES),
+    LEVEL_UP_MOVE(25, MOVE_DAZZLING_GLEAM),
+    LEVEL_UP_END
+};

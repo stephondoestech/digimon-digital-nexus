@@ -165,7 +165,12 @@ ifeq ($(RELEASE),1)
 endif
 ARMCC := $(PREFIX)gcc
 PATH_ARMCC := PATH="$(PATH)" $(ARMCC)
+ifneq ($(filter roster-check roster-generate save-editor save-editor-show save-editor-lab-ready save-editor-next-level save-editor-partner,$(MAKECMDGOALS)),)
+# Save-editor targets are host-Python utilities and do not need the ARM toolchain.
+CC1 := :
+else
 CC1 := $(shell $(PATH_ARMCC) --print-prog-name=cc1) -quiet
+endif
 
 override CFLAGS += -mthumb -mthumb-interwork -O$(O_LEVEL) -mabi=apcs-gnu -mtune=arm7tdmi -march=armv4t -Wno-pointer-to-int-cast -std=gnu17 -Werror -Wall -Wno-strict-aliasing -Wno-attribute-alias -Woverride-init -Wnonnull -Wenum-conversion
 
@@ -191,7 +196,11 @@ ifeq ($(DEPRECATED_ERROR),0)
   endif
 endif
 
+ifneq ($(filter roster-check roster-generate save-editor save-editor-show save-editor-lab-ready save-editor-next-level save-editor-partner,$(MAKECMDGOALS)),)
+LIBPATH :=
+else
 LIBPATH := -L "$(dir $(shell $(PATH_ARMCC) -mthumb -print-file-name=libgcc.a))" -L "$(dir $(shell $(PATH_ARMCC) -mthumb -print-file-name=libnosys.a))" -L "$(dir $(shell $(PATH_ARMCC) -mthumb -print-file-name=libc.a))"
+endif
 LIB := $(LIBPATH) -lc -lnosys -lgcc -L../../libagbsyscall -lagbsyscall
 # Enable debug info if set
 ifeq ($(DINFO),1)
@@ -268,7 +277,7 @@ MAKEFLAGS += --no-print-directory
 # Delete files that weren't built properly
 .DELETE_ON_ERROR:
 
-RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidycheck tidyrelease generated clean-generated clean-teachables clean-teachables_intermediates
+RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidycheck tidyrelease generated clean-generated clean-teachables clean-teachables_intermediates save-editor save-editor-show save-editor-lab-ready save-editor-next-level save-editor-partner roster-check roster-generate
 .PHONY: all rom agbcc modern compare check debug release
 .PHONY: $(RULES_NO_SCAN)
 
@@ -592,6 +601,45 @@ $(ROM): $(ELF)
 emerald: all
 firered: all
 leafgreen: all
+
+.PHONY: roster-check roster-generate
+roster-check:
+	python3 tools/digimon_roster/test_roster.py
+
+# Run in the development container; sources are fetched separately and pinned.
+roster-generate:
+	python3 tools/digimon_roster/generate.py
+	python3 tools/digimon_roster/replace_encounters.py
+	python3 tools/digimon_roster/content.py
+	python3 tools/digimon_roster/report.py
+
+# Digimon save-state helper (usage: make save-editor SAVE=/path/to/game.sav)
+SAVE ?=
+save-editor:
+	@test -n "$(SAVE)" || (echo "Usage: make save-editor SAVE=/path/to/game.sav" >&2; exit 2)
+	@test -f "$(SAVE)" || (echo "Save not found: $(SAVE)" >&2; echo "Use the actual .sav path from mGBA (for example, ~/Library/Application Support/mGBA/... )" >&2; exit 2)
+	python3 tools/digimon_save_editor.py "$(SAVE)" menu
+
+save-editor-show:
+	@test -n "$(SAVE)" || (echo "Usage: make save-editor-show SAVE=/path/to/game.sav" >&2; exit 2)
+	@test -f "$(SAVE)" || (echo "Save not found: $(SAVE)" >&2; exit 2)
+	python3 tools/digimon_save_editor.py "$(SAVE)" show
+
+save-editor-lab-ready:
+	@test -n "$(SAVE)" || (echo "Usage: make save-editor-lab-ready SAVE=/path/to/game.sav" >&2; exit 2)
+	@test -f "$(SAVE)" || (echo "Save not found: $(SAVE)" >&2; exit 2)
+	python3 tools/digimon_save_editor.py "$(SAVE)" lab-ready --in-place
+
+save-editor-next-level:
+	@test -n "$(SAVE)" || (echo "Usage: make save-editor-next-level SAVE=/path/to/game.sav" >&2; exit 2)
+	@test -f "$(SAVE)" || (echo "Save not found: $(SAVE)" >&2; exit 2)
+	python3 tools/digimon_save_editor.py "$(SAVE)" next-level --party-slot $(or $(PARTY_SLOT),1) --in-place
+
+save-editor-partner:
+	@test -n "$(SAVE)" || (echo "Usage: make save-editor-partner SAVE=/path/to/game.sav" >&2; exit 2)
+	@test -f "$(SAVE)" || (echo "Save not found: $(SAVE)" >&2; exit 2)
+	python3 tools/digimon_save_editor.py "$(SAVE)" partner-state --party-slot $(or $(PARTY_SLOT),1) --in-place
+
 # Symbol file (`make syms`)
 $(SYM): $(ELF)
 	$(OBJDUMP) -t $< | sort -u | grep -E "^0[2389]" | $(PERL) -p -e 's/^(\w{8}) (\w).{6} \S+\t(\w{8}) (\S+)$$/\1 \2 \3 \4/g' > $@
