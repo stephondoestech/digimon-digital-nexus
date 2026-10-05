@@ -1052,6 +1052,13 @@ enum __attribute__((packed)) Item
     ITEM_TATSUGIRINITE = 872,
     ITEM_GLIMMORANITE = 873,
 
+    // Digimon Armor and DNA Digivolution items (held, consumed on level-up).
+    ITEM_DIGI_EGG_COURAGE = 874,
+    ITEM_DIGI_EGG_SINCERITY = 875,
+    ITEM_DIGI_EGG_MIRACLES = 876,
+    ITEM_DIGI_EGG_KNOWLEDGE = 877,
+    ITEM_DNA_CHARGE = 878,
+
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

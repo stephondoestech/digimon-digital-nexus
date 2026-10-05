@@ -80,7 +80,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_FLASH_FIRE, ABILITY_MAGMA_ARMOR, ABILITY_NONE },
     .bodyColor = BODY_COLOR_RED,
@@ -101,7 +101,7 @@
     FOOTPRINT(QuestionMark)
     .levelUpLearnset = sRosterBIRDRAMONMoves,
     .teachableLearnset = sDigimonFlyingTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
-    
+    .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GARUDAMON}),
 },
 
 [SPECIES_DONSHOUMON] = {
@@ -115,7 +115,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_OWN_TEMPO, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_RED,
@@ -150,7 +150,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_INTIMIDATE, ABILITY_IMMUNITY, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLUE,
@@ -185,7 +185,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_SPEED_BOOST, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLUE,
@@ -255,7 +255,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLUE,

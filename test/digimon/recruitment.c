@@ -21,12 +21,12 @@ TEST("Digimon recruitment initializes old saves only on award and persists every
     EXPECT_EQ(Digimon_GetWildScanPercent(SPECIES_BETAMON), 0);
     EXPECT_EQ(original->pokedex.filler[0], 0xA5);
     // Adjacent packed nibbles, and the final odd entry, must stay independent.
-    for (u32 species = SPECIES_ANGORAMON; species < SPECIES_EGG; species++)
+    for (u32 species = SPECIES_ANGORAMON; species < SPECIES_ANGORAMON + DIGIMON_WILD_ROSTER_COUNT; species++)
         for (u32 step = 0; step < (species % 5) + 1; step++)
             Digimon_RecordWildScan(species);
     memcpy(reloaded, original, sizeof(*reloaded));
     gSaveBlock2Ptr = reloaded;
-    for (u32 species = SPECIES_ANGORAMON; species < SPECIES_EGG; species++)
+    for (u32 species = SPECIES_ANGORAMON; species < SPECIES_ANGORAMON + DIGIMON_WILD_ROSTER_COUNT; species++)
         EXPECT_EQ(Digimon_GetWildScanPercent(species), ((species % 5) + 1) * 20);
     gSaveBlock2Ptr = original;
     Free(reloaded);
@@ -108,7 +108,7 @@ TEST("Digimon guide lists stable IDs, filters event forms, and previews without 
     {
         gSpecialVar_0x8007 = mode;
         Digimon_GuideList();
-        EXPECT_EQ(MultichoiceDynamic_StackSize(), mode ? 193 : 203);
+        EXPECT_EQ(MultichoiceDynamic_StackSize(), mode ? DIGIMON_WILD_ROSTER_COUNT : DIGIMON_FIELD_GUIDE_COUNT);
         for (u32 i = 0; i < MultichoiceDynamic_StackSize(); i++)
         {
             struct ListMenuItem *item = MultichoiceDynamic_PeekElementAt(i);

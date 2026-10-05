@@ -16099,6 +16099,91 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_DIGI_EGG_COURAGE] =
+    {
+        .name = ITEM_NAME("DigiEgg: Courage"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Hold to Armor\n"
+            "Digivolve into\n"
+            "Flamedramon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        // Temporary evolution-stone icon until Digi-Egg art is sourced.
+        .iconPic = gItemIcon_FireStone,
+        .iconPalette = gItemIconPalette_FireStone,
+    },
+
+    [ITEM_DIGI_EGG_SINCERITY] =
+    {
+        .name = ITEM_NAME("DigiEgg: Sincerity"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Hold to Armor\n"
+            "Digivolve into\n"
+            "Shurimon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        // Temporary evolution-stone icon until Digi-Egg art is sourced.
+        .iconPic = gItemIcon_LeafStone,
+        .iconPalette = gItemIconPalette_LeafStone,
+    },
+
+    [ITEM_DIGI_EGG_MIRACLES] =
+    {
+        .name = ITEM_NAME("DigiEgg: Miracles"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Hold to Armor\n"
+            "Digivolve into\n"
+            "Magnamon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        // Temporary evolution-stone icon until Digi-Egg art is sourced.
+        .iconPic = gItemIcon_SunStone,
+        .iconPalette = gItemIconPalette_SunStone,
+    },
+
+    [ITEM_DIGI_EGG_KNOWLEDGE] =
+    {
+        .name = ITEM_NAME("DigiEgg: Knowledge"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Hold to Armor\n"
+            "Digivolve into\n"
+            "Digmon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        // Temporary evolution-stone icon until Digi-Egg art is sourced.
+        .iconPic = gItemIcon_DuskStone,
+        .iconPalette = gItemIconPalette_DuskStone,
+    },
+
+    [ITEM_DNA_CHARGE] =
+    {
+        .name = ITEM_NAME("DNA Charge"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Hold for a partner\n"
+            "pair to DNA\n"
+            "Digivolve."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        // Temporary evolution-stone icon until Digi-Egg art is sourced.
+        .iconPic = gItemIcon_LinkingCord,
+        .iconPalette = gItemIconPalette_LinkingCord,
+    },
 };
 
 #undef ITEM_NAME

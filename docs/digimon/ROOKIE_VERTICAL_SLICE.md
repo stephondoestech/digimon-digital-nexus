@@ -8,13 +8,13 @@ the current engine type chart.
 | Digimon | Attribute | Element / engine type | Recruitment plan | Evolution plan |
 | --- | --- | --- | --- | --- |
 | Agumon | Vaccine | Fire | Digivice starter; Route 101; DigiLab reconstruction | Greymon or Tyrannomon at level 16 |
-| Gabumon | Data | Ice | Digivice starter, level 5 | Garurumon (future) |
-| Biyomon | Vaccine | Wind / Flying | Digivice starter, level 5 | Birdramon (future) |
-| Tentomon | Vaccine | Electric / Bug-Electric | Digivice starter, level 5 | Kabuterimon (future) |
-| Palmon | Data | Plant / Grass | Digivice starter, level 5 | Togemon (future) |
-| Gomamon | Vaccine | Water | Digivice starter, level 5 | Ikkakumon (future) |
-| Patamon | Data | Wind / Flying | Digivice starter, level 5 | Angemon (future) |
-| Salamon | Vaccine | Holy / Fairy | Digivice starter, level 5 | Gatomon (future) |
+| Gabumon | Data | Ice | Digivice starter, level 5 | Garurumon at level 16 |
+| Biyomon | Vaccine | Wind / Flying | Digivice starter, level 5 | Birdramon at level 16 |
+| Tentomon | Vaccine | Electric / Bug-Electric | Digivice starter, level 5 | Kabuterimon at level 16 |
+| Palmon | Data | Plant / Grass | Digivice starter, level 5 | Togemon at level 16 |
+| Gomamon | Vaccine | Water | Digivice starter, level 5 | Ikkakumon at level 16 |
+| Patamon | Data | Wind / Flying | Digivice starter, level 5 | Angemon at level 16 |
+| Salamon | Vaccine | Holy / Fairy | Digivice starter, level 5 | Gatomon at level 16 |
 
 All eight are available through the Digivice inside Birch's bag during the
 Route 101 rescue. Up/down browses the complete list and updates the portrait;

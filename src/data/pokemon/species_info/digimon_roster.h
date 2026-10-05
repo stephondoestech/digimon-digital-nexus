@@ -19,3 +19,6 @@
 #include "digimon_roster/17.h"
 #include "digimon_roster/18.h"
 #include "digimon_roster/19.h"
+#include "digimon_roster/20.h"
+#include "digimon_roster/21.h"
+#include "digimon_roster/22.h"

@@ -37,7 +37,8 @@ def legacy_data():
 
 
 def replacements():
-    rows, legacy, ids = roster(), legacy_data(), legacy_ids()
+    rows = [row for row in roster() if row.get("wild", True)]
+    legacy, ids = legacy_data(), legacy_ids()
     mapping = {}
     for key, value in ids.items():
         if not value:

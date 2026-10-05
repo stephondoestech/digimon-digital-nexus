@@ -66,7 +66,7 @@
     FOOTPRINT(QuestionMark)
     .levelUpLearnset = sRosterARMADILMONMoves,
     .teachableLearnset = sDigimonLandTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
-    .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ANKYLOMON}),
+    .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DIGMON, CONDITIONS({IF_HOLD_ITEM, ITEM_DIGI_EGG_KNOWLEDGE})}, {EVO_LEVEL, 32, SPECIES_ANKYLOMON}),
 },
 
 [SPECIES_ARURAUMON] = {

@@ -35,6 +35,11 @@ const u32 gMonBackPic_Greymon[] = INCGFX_U32("graphics/pokemon/greymon/back.png"
 const u16 gMonPalette_Greymon[] = INCGFX_U16("graphics/pokemon/greymon/front.png", ".gbapal");
 const u16 gMonShinyPalette_Greymon[] = INCGFX_U16("graphics/pokemon/greymon/front.png", ".gbapal");
 const u8 gMonIcon_Greymon[] = INCGFX_U8("graphics/pokemon/greymon/icon.png", ".4bpp");
+const u32 gMonFrontPic_Tyrannomon[] = INCGFX_U32("graphics/pokemon/tyrannomon/front.png", ".4bpp.lz");
+const u32 gMonBackPic_Tyrannomon[] = INCGFX_U32("graphics/pokemon/tyrannomon/back.png", ".4bpp.lz");
+const u16 gMonPalette_Tyrannomon[] = INCGFX_U16("graphics/pokemon/tyrannomon/front.png", ".gbapal");
+const u16 gMonShinyPalette_Tyrannomon[] = INCGFX_U16("graphics/pokemon/tyrannomon/front.png", ".gbapal");
+const u8 gMonIcon_Tyrannomon[] = INCGFX_U8("graphics/pokemon/tyrannomon/icon.png", ".4bpp");
 #include "digimon_rookies.h"
 #include "digimon_roster.h"
 

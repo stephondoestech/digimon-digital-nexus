@@ -5,6 +5,10 @@ from collections import defaultdict
 from catalog import ROOT
 
 
+def item_name(item):
+    return item.removeprefix("ITEM_").replace("_", " ").title().replace("Dna ", "DNA ")
+
+
 def main():
     rows = json.loads((ROOT / "tools/digimon_roster/manifest.json").read_text())["species"]
     encounters = json.loads((ROOT / "src/data/wild_encounters.json").read_text())
@@ -21,14 +25,16 @@ def main():
                         locations[key].append(area)
     lines = ["# Expanded Digimon roster", "", "Generated from the playable species and encounter tables.", "",
              "The eight Adventure starters are initial-choice/event-only. Agumon's existing",
-             "Greymon/Tyrannomon branches remain. The following 193 additional Digimon all have",
-             "battle portraits, party icons, stats, moves and ordinary encounter locations.", "",
+             "Greymon/Tyrannomon branches remain. The following additional Digimon all have",
+             "battle portraits, party icons, stats and moves. Donor-roster Digimon have ordinary",
+             "encounter locations; hand-authored Digimon World DS additions are evolution-only.", "",
              "Champions appear only in wild slots whose minimum level is 24 or higher.", "",
              "| Digimon | Species ID | Stage | Attribute | Level evolution | Example locations |",
              "|---|---:|---|---|---|---|"]
     names = {row["key"]: row["name"] for row in rows}
     for row in rows:
-        targets = ", ".join(f"{names[target]} ({level})" for level, target in row["evolutions"]) or "—"
+        targets = ", ".join(f"{names[e[1]]} ({e[0]}{' + ' + item_name(e[2]) if len(e) > 2 else ''})"
+                            for e in row["evolutions"]) or "—"
         places = ", ".join(locations[row["key"]][:3])
         lines.append(f"| {row['name']} | {row['species_id']} | {row['stage']} | {row['attribute']} | {targets} | {places} |")
     (ROOT / "docs/digimon/EXPANDED_ROSTER.md").write_text("\n".join(lines) + "\n")

@@ -67,7 +67,7 @@ class RosterTests(unittest.TestCase):
                         if method in ("water_mons", "fishing_mons"):
                             self.assertIn("TYPE_WATER", row["types"])
                         counts[key] += 1
-        self.assertEqual(set(counts), set(self.by_key))
+        self.assertEqual(set(counts), {row["key"] for row in self.rows if row.get("wild", True)})
 
     def test_learnsets_have_usable_starts_and_closed_evolution_targets(self):
         for row in self.rows:
@@ -76,11 +76,19 @@ class RosterTests(unittest.TestCase):
                 self.assertEqual(levels, sorted(levels))
                 initial = [m[1] for m in row["moves"] if m[0] <= 1][-4:]
                 self.assertIn("MOVE_TACKLE", initial)
-                for level, target in row["evolutions"]:
+                for level, target, *item in row["evolutions"]:
                     self.assertIn(target, self.by_key)
+                    self.assertTrue(all(name.startswith("ITEM_DIGI_EGG_") or name == "ITEM_DNA_CHARGE" for name in item))
                     self.assertNotIn(target, STARTERS)
                     self.assertNotEqual(target, row["key"])
                     self.assertTrue(1 <= level <= 100)
+
+    def test_evolution_lines_share_growth_rate(self):
+        # The engine recalculates level from experience after evolving.
+        for row in self.rows:
+            for level, target, *_ in row["evolutions"]:
+                with self.subTest(species=row["key"], target=target):
+                    self.assertEqual(self.by_key[target]["growthRate"], row["growthRate"])
 
     def test_saved_dex_flags_do_not_grow(self):
         dex = (ROOT / "include/constants/pokedex.h").read_text()

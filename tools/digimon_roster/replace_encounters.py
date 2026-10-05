@@ -34,7 +34,7 @@ def habitat(map_name, method):
 
 
 def main():
-    rows = roster()
+    rows = [row for row in roster() if row.get("wild", True)]
     counts = Counter()
     data = json.loads(TARGET.read_text())
     slot = 0

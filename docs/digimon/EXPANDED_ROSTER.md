@@ -3,15 +3,16 @@
 Generated from the playable species and encounter tables.
 
 The eight Adventure starters are initial-choice/event-only. Agumon's existing
-Greymon/Tyrannomon branches remain. The following 193 additional Digimon all have
-battle portraits, party icons, stats, moves and ordinary encounter locations.
+Greymon/Tyrannomon branches remain. The following additional Digimon all have
+battle portraits, party icons, stats and moves. Donor-roster Digimon have ordinary
+encounter locations; hand-authored Digimon World DS additions are evolution-only.
 
 Champions appear only in wild slots whose minimum level is 24 or higher.
 
 | Digimon | Species ID | Stage | Attribute | Level evolution | Example locations |
 |---|---:|---|---|---|---|
 | Angoramon | 1583 | Rookie | Vaccne | Doggymon (28) | MAP_ROUTE110, MAP_SAFARI_ZONE_SOUTH, MAP_SAFARI_ZONE_NORTHWEST |
-| Armadillomon | 1584 | Rookie | Vaccne | Ankylomon (32) | MAP_ROUTE104, MAP_GRANITE_CAVE_1F, MAP_VICTORY_ROAD_1F |
+| Armadillomon | 1584 | Rookie | Vaccne | Digmon (20 + Digi Egg Knowledge), Ankylomon (32) | MAP_ROUTE104, MAP_GRANITE_CAVE_1F, MAP_VICTORY_ROAD_1F |
 | Aruraumon | 1585 | Rookie | Virus | Geremon (24) | MAP_ROUTE102, MAP_PETALBURG_WOODS, MAP_SAFARI_ZONE_NORTHWEST |
 | Bakomon | 1586 | Rookie | Data | — | MAP_ROUTE112, MAP_ROUTE117, MAP_MT_PYRE_2F |
 | Bearmon | 1587 | Rookie | Vaccne | Dobermon (35) | MAP_ROUTE104, MAP_METEOR_FALLS_B1F_2R, MAP_METEOR_FALLS_1F_1R |
@@ -54,7 +55,7 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Gumdramon | 1624 | Rookie | Vaccne | Aresdramon (32) | MAP_ROUTE114, MAP_GRANITE_CAVE_1F, MAP_GRANITE_CAVE_B1F |
 | Hackmon | 1625 | Rookie | Data | Baohuckmon (37) | MAP_ROUTE111, MAP_GRANITE_CAVE_1F, MAP_GRANITE_CAVE_STEVENS_ROOM |
 | Hagurumon | 1626 | Rookie | Virus | Balistamon (32) | MAP_ROUTE112, MAP_GRANITE_CAVE_B1F, MAP_VICTORY_ROAD_1F |
-| Hawkmon | 1627 | Rookie | Data | Aquilamon (30) | MAP_ROUTE104, MAP_ROUTE121, MAP_METEOR_FALLS_1F_1R |
+| Hawkmon | 1627 | Rookie | Data | Shurimon (20 + Digi Egg Sincerity), Aquilamon (30) | MAP_ROUTE104, MAP_ROUTE121, MAP_METEOR_FALLS_1F_1R |
 | Herissmon | 1628 | Rookie | Data | Filmon (32) | MAP_ROUTE111, MAP_SAFARI_ZONE_SOUTH, MAP_NEW_MAUVILLE_INSIDE |
 | Hyokomon | 1629 | Rookie | Vaccne | Buraimon (39) | MAP_ROUTE112, MAP_ROUTE119, MAP_METEOR_FALLS_1F_1R |
 | Ignitemon | 1630 | Rookie | Virus | Impmon (30) | MAP_ROUTE111, MAP_ROUTE119, MAP_SAFARI_ZONE_SOUTHWEST |
@@ -110,10 +111,10 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Tinkermon | 1680 | Rookie | Virus | — | MAP_ROUTE113, MAP_ROUTE120, MAP_ROUTE123 |
 | Toyagumon | 1681 | Rookie | Vaccne | — | MAP_ROUTE116, MAP_FIERY_PATH, MAP_JAGGED_PASS |
 | Tsukaimon | 1682 | Rookie | Virus | Devimon (35) | MAP_ROUTE113, MAP_ROUTE117, MAP_MT_PYRE_1F |
-| Veemon | 1683 | Rookie | Free | ExVeemon (36) | MAP_ROUTE113, MAP_RUSTURF_TUNNEL, MAP_GRANITE_CAVE_B2F |
+| Veemon | 1683 | Rookie | Free | Flamedramon (20 + Digi Egg Courage), Magnamon (30 + Digi Egg Miracles), ExVeemon (36) | MAP_ROUTE113, MAP_RUSTURF_TUNNEL, MAP_GRANITE_CAVE_B2F |
 | Vemmon | 1684 | Rookie | Uknown | — | MAP_ROUTE110, MAP_RUSTURF_TUNNEL, MAP_VICTORY_ROAD_1F |
 | Vorvomon | 1685 | Rookie | Virus | Birdramon (32) | MAP_ROUTE114, MAP_ROUTE116, MAP_GRANITE_CAVE_B1F |
-| Wormmon | 1686 | Rookie | Virus | — | MAP_ROUTE116, MAP_PETALBURG_WOODS, MAP_MAGMA_HIDEOUT_2F_1R |
+| Wormmon | 1686 | Rookie | Virus | Stingmon (30) | MAP_ROUTE116, MAP_PETALBURG_WOODS, MAP_MAGMA_HIDEOUT_2F_1R |
 | Zenimon | 1687 | Rookie | Vaccne | Ganemon (28) | MAP_ROUTE111, MAP_GRANITE_CAVE_1F, MAP_GRANITE_CAVE_B2F |
 | Zubamon | 1688 | Rookie | Vaccne | Axemon (32) | MAP_ROUTE104, MAP_RUSTURF_TUNNEL, MAP_NEW_MAUVILLE_INSIDE |
 | Aegiomon | 1689 | Champion | Vaccne | — | MAP_ROUTE119, MAP_METEOR_FALLS_1F_2R, MAP_SKY_PILLAR_1F |
@@ -127,12 +128,12 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Angelamon | 1697 | Champion | Free | — | MAP_ROUTE121, MAP_SAFARI_ZONE_NORTHWEST, MAP_SKY_PILLAR_1F |
 | Aresdramon | 1698 | Champion | Vaccne | — | MAP_SAFARI_ZONE_SOUTH, MAP_SEAFLOOR_CAVERN_ROOM2, MAP_SEAFLOOR_CAVERN_ROOM7 |
 | Atamademon | 1699 | Champion | Data | — | MAP_SAFARI_ZONE_SOUTH, MAP_SEAFLOOR_CAVERN_ROOM2, MAP_SEAFLOOR_CAVERN_ROOM5 |
-| Angemon | 1700 | Champion | Vaccne | — | MAP_ROUTE119, MAP_SAFARI_ZONE_SOUTHWEST, MAP_METEOR_FALLS_B1F_1R |
+| Angemon | 1700 | Champion | Vaccne | MagnaAngemon (32) | MAP_ROUTE119, MAP_SAFARI_ZONE_SOUTHWEST, MAP_METEOR_FALLS_B1F_1R |
 | Ankylomon | 1701 | Champion | Vaccne | — | MAP_ROUTE120, MAP_SEAFLOOR_CAVERN_ROOM2, MAP_SEAFLOOR_CAVERN_ROOM7 |
 | Archelomon | 1702 | Champion | Data | — | MAP_ROUTE102, MAP_ROUTE110, MAP_ROUTE117 |
 | Chamblemon | 1703 | Champion | Virus | — | MAP_SAFARI_ZONE_SOUTH, MAP_METEOR_FALLS_1F_2R, MAP_SKY_PILLAR_3F |
 | Chamelemon | 1704 | Champion | Virus | — | MAP_ROUTE118, MAP_SAFARI_ZONE_NORTH, MAP_METEOR_FALLS_B1F_1R |
-| Birdramon | 1705 | Champion | Vaccne | — | MAP_ROUTE120, MAP_SAFARI_ZONE_NORTHWEST, MAP_SKY_PILLAR_3F |
+| Birdramon | 1705 | Champion | Vaccne | Garudamon (32) | MAP_ROUTE120, MAP_SAFARI_ZONE_NORTHWEST, MAP_SKY_PILLAR_3F |
 | Donshoumon | 1706 | Champion | Data | — | MAP_ROUTE115, MAP_SAFARI_ZONE_NORTHWEST, MAP_SKY_PILLAR_5F |
 | DexDorugamon | 1707 | Champion | Virus | — | MAP_MT_PYRE_1F, MAP_MT_PYRE_2F, MAP_MT_PYRE_4F |
 | Diatrymon | 1708 | Champion | Vaccne | — | MAP_ROUTE120, MAP_SAFARI_ZONE_NORTHWEST, MAP_METEOR_FALLS_B1F_1R |
@@ -141,7 +142,7 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Deputymon | 1711 | Champion | Vaccne | — | MAP_VICTORY_ROAD_1F, MAP_SEAFLOOR_CAVERN_ROOM2, MAP_SEAFLOOR_CAVERN_ROOM6 |
 | Flybeemon | 1712 | Champion | Data | — | MAP_METEOR_FALLS_B1F_2R, MAP_SEAFLOOR_CAVERN_ROOM2, MAP_SEAFLOOR_CAVERN_ROOM7 |
 | Devidramon | 1713 | Champion | Virus | — | MAP_MT_PYRE_1F, MAP_MT_PYRE_2F, MAP_MT_PYRE_4F |
-| Devimon | 1714 | Champion | Virus | — | MAP_MT_PYRE_1F, MAP_ROUTE123, MAP_MT_PYRE_3F |
+| Devimon | 1714 | Champion | Virus | Myotismon (45) | MAP_MT_PYRE_1F, MAP_ROUTE123, MAP_MT_PYRE_3F |
 | Doggymon | 1715 | Champion | Data | — | MAP_ROUTE115, MAP_ROUTE130, MAP_SKY_PILLAR_5F |
 | Dokugumon | 1716 | Champion | Virus | — | MAP_ROUTE118, MAP_METEOR_FALLS_1F_2R, MAP_SKY_PILLAR_5F |
 | Chouflymon | 1717 | Champion | Vaccne | — | MAP_METEOR_FALLS_B1F_2R, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SKY_PILLAR_5F |
@@ -163,7 +164,7 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Blimpmon | 1733 | Champion | Data | — | MAP_ROUTE118, MAP_SEAFLOOR_CAVERN_ROOM3, MAP_SEAFLOOR_CAVERN_ROOM4 |
 | Darlizamon | 1734 | Champion | Virus | — | MAP_ROUTE121, MAP_MT_PYRE_2F, MAP_MT_PYRE_4F |
 | Darmailmon | 1735 | Champion | Virus | — | MAP_SAFARI_ZONE_SOUTH, MAP_MT_PYRE_2F, MAP_MT_PYRE_4F |
-| ExVeemon | 1736 | Champion | Vaccne | — | MAP_METEOR_FALLS_B1F_2R, MAP_SEAFLOOR_CAVERN_ROOM1, MAP_SEAFLOOR_CAVERN_ROOM5 |
+| ExVeemon | 1736 | Champion | Vaccne | Paildramon (32 + DNA Charge) | MAP_METEOR_FALLS_B1F_2R, MAP_SEAFLOOR_CAVERN_ROOM1, MAP_SEAFLOOR_CAVERN_ROOM5 |
 | Drimogemon | 1737 | Champion | Data | — | MAP_SAFARI_ZONE_SOUTH, MAP_SEAFLOOR_CAVERN_ROOM1, MAP_SEAFLOOR_CAVERN_ROOM7 |
 | Ebidramon | 1738 | Champion | Data | — | MAP_ROUTE103, MAP_ROUTE105, MAP_ROUTE114 |
 | Bullmon | 1739 | Champion | Vaccne | — | MAP_ROUTE115, MAP_ROUTE123, MAP_SEAFLOOR_CAVERN_ROOM7 |
@@ -188,7 +189,7 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Dinohyumon | 1758 | Champion | Data | — | MAP_VICTORY_ROAD_1F, MAP_SEAFLOOR_CAVERN_ROOM1, MAP_SEAFLOOR_CAVERN_ROOM5 |
 | Dobermon | 1759 | Champion | Vaccne | — | MAP_MT_PYRE_1F, MAP_ROUTE123, MAP_MT_PYRE_5F |
 | Apemon | 1760 | Champion | Vaccne | — | MAP_ROUTE123, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SKY_PILLAR_1F |
-| Aquilamon | 1761 | Champion | Vaccne | — | MAP_SAFARI_ZONE_SOUTH, MAP_SAFARI_ZONE_NORTH, MAP_SKY_PILLAR_3F |
+| Aquilamon | 1761 | Champion | Vaccne | Silphymon (32 + DNA Charge) | MAP_SAFARI_ZONE_SOUTH, MAP_SAFARI_ZONE_NORTH, MAP_SKY_PILLAR_3F |
 | Flymon | 1762 | Champion | Virus | — | MAP_ROUTE118, MAP_SAFARI_ZONE_NORTH, MAP_METEOR_FALLS_B1F_1R |
 | Frigimon | 1763 | Champion | Vaccne | — | MAP_ROUTE118, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM |
 | Frogmon | 1764 | Champion | Data | — | MAP_ROUTE103, MAP_ROUTE104, MAP_ROUTE111 |
@@ -197,9 +198,38 @@ Champions appear only in wild slots whose minimum level is 24 or higher.
 | Gaogamon | 1767 | Champion | Data | — | MAP_ROUTE121, MAP_SAFARI_ZONE_NORTHWEST, MAP_SKY_PILLAR_3F |
 | Gargomon | 1768 | Champion | Vaccne | — | MAP_ROUTE120, MAP_SAFARI_ZONE_NORTH, MAP_METEOR_FALLS_B1F_1R |
 | Gargoylmon | 1769 | Champion | Virus | — | MAP_ROUTE120, MAP_MT_PYRE_2F, MAP_MT_PYRE_4F |
-| Garurumon | 1770 | Champion | Vaccne | — | MAP_ROUTE121, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM |
+| Garurumon | 1770 | Champion | Vaccne | WereGarurmon (32) | MAP_ROUTE121, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM |
 | Gekomon | 1771 | Champion | Virus | — | MAP_ROUTE104, MAP_ROUTE110, MAP_ROUTE111 |
 | GeoGreymon | 1772 | Champion | Vaccne | — | MAP_VICTORY_ROAD_1F, MAP_SEAFLOOR_CAVERN_ROOM4, MAP_SEAFLOOR_CAVERN_ROOM7 |
-| Gatomon | 1773 | Champion | Vaccne | — | MAP_ROUTE119, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SKY_PILLAR_1F |
+| Gatomon | 1773 | Champion | Vaccne | Silphymon (32 + DNA Charge), Angewomon (32) | MAP_ROUTE119, MAP_SAFARI_ZONE_SOUTHWEST, MAP_SKY_PILLAR_1F |
 | Geremon | 1774 | Champion | Virus | — | MAP_ROUTE119, MAP_METEOR_FALLS_1F_2R, MAP_METEOR_FALLS_B1F_1R |
 | Gesomon | 1775 | Champion | Virus | — | MAP_ROUTE102, MAP_ROUTE110, MAP_ROUTE114 |
+| Koromon | 1776 | In-Training | Free | — |  |
+| Kabuterimon | 1777 | Champion | Vaccine | MKabuterimon (32) |  |
+| Togemon | 1778 | Champion | Data | Lillymon (32) |  |
+| Ikkakumon | 1779 | Champion | Vaccine | Zudomon (32) |  |
+| Kuwagamon | 1780 | Champion | Virus | — |  |
+| Stingmon | 1781 | Champion | Free | Paildramon (32 + DNA Charge) |  |
+| MetalGreymon | 1782 | Ultimate | Vaccine | WarGreymon (48) |  |
+| WereGarurmon | 1783 | Ultimate | Vaccine | MtlGarurumon (48) |  |
+| Garudamon | 1784 | Ultimate | Vaccine | Phoenixmon (48) |  |
+| MKabuterimon | 1785 | Ultimate | Data | HKabuterimon (48) |  |
+| Lillymon | 1786 | Ultimate | Data | Rosemon (48) |  |
+| Zudomon | 1787 | Ultimate | Vaccine | Vikemon (48) |  |
+| MagnaAngemon | 1788 | Ultimate | Vaccine | Seraphimon (48) |  |
+| Angewomon | 1789 | Ultimate | Vaccine | — |  |
+| Etemon | 1790 | Ultimate | Virus | — |  |
+| Myotismon | 1791 | Ultimate | Virus | — |  |
+| Paildramon | 1792 | Ultimate | Free | Imperialdrmn (48) |  |
+| Silphymon | 1793 | Ultimate | Data | — |  |
+| Shurimon | 1794 | Armor | Free | — |  |
+| Magnamon | 1795 | Armor | Free | — |  |
+| WarGreymon | 1796 | Mega | Vaccine | — |  |
+| MtlGarurumon | 1797 | Mega | Data | — |  |
+| Phoenixmon | 1798 | Mega | Vaccine | — |  |
+| HKabuterimon | 1799 | Mega | Vaccine | — |  |
+| Rosemon | 1800 | Mega | Data | — |  |
+| Vikemon | 1801 | Mega | Free | — |  |
+| Seraphimon | 1802 | Mega | Vaccine | — |  |
+| BWarGreymon | 1803 | Mega | Virus | — |  |
+| Imperialdrmn | 1804 | Mega | Free | — |  |

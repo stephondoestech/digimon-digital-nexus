@@ -15,6 +15,36 @@ back under the existing user-approved policy. Party icons use two 32x32 frames
 and the engine's shared icon palette 0. These are sourced community assets, not
 newly authored sprites. Existing source-credit/release requirements still apply.
 
+## Digimon World DS battle sprites — 2026-10-04
+
+Battle portraits for 29 hand-authored Digimon (Kabuterimon, Togemon,
+Ikkakumon, Kuwagamon, Stingmon, Koromon, the Adventure Ultimates and Megas,
+Etemon, Myotismon, Paildramon, Silphymon, Shurimon, Magnamon,
+BlackWarGreymon, Imperialdramon) and Tyrannomon come from
+[Digimon World DS on The Spriters Resource](https://www.spriters-resource.com/ds_dsi/dgmnworldds/).
+`tools/digimon_roster/curated.py` lists each asset ID, and `manifest.json`
+records the asset URL and the SHA-256 of each cut `source_front.png`.
+Credit every ripper on release, whether or not the sheet asks for it:
+
+| Uploader (sheet credit) | Digimon |
+| --- | --- |
+| redblueyellow ("No credit needed") | Kabuterimon, Togemon, Ikkakumon, Kuwagamon, Lillymon, Zudomon, Angewomon, Etemon, Shurimon, Rosemon, Vikemon, Seraphimon, Tyrannomon |
+| RadSpyro ("Credit appreciated") | Stingmon, MetalGreymon, WereGarurumon, Garudamon, Myotismon, Paildramon, Silphymon, Magnamon, MetalGarurumon, Phoenixmon, BlackWarGreymon, Imperialdramon |
+| A.J. Nitro (ripped with redblueyellow; "Give credit if used") | MagnaAngemon, WarGreymon |
+| Garamonde (ripped by Daxx, arranged by Mighty Jetters) | MegaKabuterimon, HerculesKabuterimon |
+| Atlanta ("Please give note if used") | Koromon |
+
+`tools/digimon_roster/fetch_dwds.py` caches each sheet in the ignored
+`tools/digimon_roster/upstream/dwds/`, cuts the first battle pose, removes the
+panel and sheet background, and area-averages sprites larger than 62 px down to
+portrait size before the usual 64x64 conversion. Stats, typing and moves for
+these species are original placeholders, not from the game. Run it in the dev
+container, then `make roster-generate`. Source access is not a redistribution
+license; retain credits and resolve rights before release.
+
+DigiEgg and DNA Charge items temporarily reuse the Fire/Leaf/Sun/Dusk Stone
+and Linking Cord icons.
+
 ## Agumon Overworld Sprite
 
 The initial Agumon overworld sprite is derived from the community-provided

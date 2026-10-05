@@ -63,6 +63,25 @@ TEST("Agumon branches to the appropriate Champion at level 16")
         EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), SPECIES_TYRANNOMON);
 }
 
+TEST("Digimon starters Digivolve into their Adventure Champion at level 16")
+{
+    struct Pokemon mon;
+    enum Species rookie, champion;
+
+    PARAMETRIZE { rookie = SPECIES_GABUMON; champion = SPECIES_GARURUMON; }
+    PARAMETRIZE { rookie = SPECIES_BIYOMON; champion = SPECIES_BIRDRAMON; }
+    PARAMETRIZE { rookie = SPECIES_PATAMON; champion = SPECIES_ANGEMON; }
+    PARAMETRIZE { rookie = SPECIES_SALAMON; champion = SPECIES_GATOMON; }
+    PARAMETRIZE { rookie = SPECIES_TENTOMON; champion = SPECIES_KABUTERIMON; }
+    PARAMETRIZE { rookie = SPECIES_PALMON; champion = SPECIES_TOGEMON; }
+    PARAMETRIZE { rookie = SPECIES_GOMAMON; champion = SPECIES_IKKAKUMON; }
+
+    CreateMon(&mon, rookie, 15, 0, OTID_STRUCT_PLAYER_ID);
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), SPECIES_NONE);
+    CreateMon(&mon, rookie, 16, 0, OTID_STRUCT_PLAYER_ID);
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), champion);
+}
+
 TEST("Agumon Champion branches have Greymon and Tyrannomon data")
 {
     EXPECT_EQ(gSpeciesInfo[SPECIES_GREYMON].baseAttack, 95);

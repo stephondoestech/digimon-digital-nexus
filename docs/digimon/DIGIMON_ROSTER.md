@@ -1,7 +1,9 @@
 # Digimon Roster
 
-The playable roster now contains **203 Digimon**: the existing ten species plus
-193 sourced additions (106 Rookies and 87 Champions). See the generated
+The playable roster now contains **232 Digimon**: the existing ten species,
+193 sourced wild additions (106 Rookies and 87 Champions), and 29 evolution-only
+species with Digimon World DS art (Champions, Ultimates, Megas, Armor and DNA
+forms; see [Digivolution](DIGIVOLUTION.md)). See the generated
 [complete roster, evolution levels and locations](EXPANDED_ROSTER.md).
 
 All 6,459 ordinary/facility JSON encounter slots use Digimon. The eight Adventure

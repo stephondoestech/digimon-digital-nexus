@@ -2,6 +2,8 @@
 from pathlib import Path
 import re
 
+from curated import CURATED
+
 ROOT = Path(__file__).resolve().parents[2]
 UPSTREAM = Path(__file__).resolve().parent / "upstream"
 REVISION = "75a0c3642ee14311f08d41db23da3ddf52562577"
@@ -81,6 +83,8 @@ def roster():
             "bodyColor": field(entry, "bodyColor"),
             "abilities": re.search(r"\.abilities\s*=\s*\{([^}]+)", entry)[1].strip(),
         })
+    # Appended last so existing species IDs and dex slots stay stable.
+    result += [dict(row) for row in CURATED]
     assert len(result) >= 150 and len({r["key"] for r in result}) == len(result)
     assert not set(STARTERS) & {r["key"] for r in result}
     assert all(len(r["name"]) <= 12 for r in result)

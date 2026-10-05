@@ -171,7 +171,7 @@
     FOOTPRINT(QuestionMark)
     .levelUpLearnset = sRosterHAWKMONMoves,
     .teachableLearnset = sDigimonFlyingTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
-    .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AQUILAMON}),
+    .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SHURIMON, CONDITIONS({IF_HOLD_ITEM, ITEM_DIGI_EGG_SINCERITY})}, {EVO_LEVEL, 30, SPECIES_AQUILAMON}),
 },
 
 [SPECIES_HERISSMON] = {

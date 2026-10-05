@@ -6,6 +6,7 @@ import re
 import sys
 
 from catalog import ROOT, UPSTREAM, REVISION, URL, roster
+from curated import ART_ONLY, EXTRA_EVOLUTIONS, STARTER_CHAMPIONS, STARTER_GROWTH
 
 sys.path.insert(0, str(ROOT / "tools"))
 from prepare_rookie_sprites import fit, icon_palette
@@ -44,11 +45,17 @@ def chunks(relative, entries, size):
     return "\n".join(includes) + "\n"
 
 
+DWDS_URL = "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/{}/"
+
+
 def portraits(row):
     directory = ROOT / "graphics/pokemon" / row["slug"]
     source = directory / "source_front.png"
     row["source_sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
-    row["source_url"] = f"{URL}/graphics/pokemon/{row.get('donor_path') or row['slug'] + '/front.png'}"
+    if "asset" in row:
+        row["source_url"] = DWDS_URL.format(row["asset"])
+    else:
+        row["source_url"] = f"{URL}/graphics/pokemon/{row.get('donor_path') or row['slug'] + '/front.png'}"
     front = to_indexed_4bpp(fit(load_rgba_source(source), (64, 64), (62, 62)))
     front.save(directory / "front.png", bits=4, transparency=0)
     # User-approved front-as-back policy, not a fabricated rear view.
@@ -79,8 +86,11 @@ def learnsets(rows):
     }
     entries = []
     for row in rows:
-        moves = [(int(level), move) for level, move in re.findall(
-            r"LEVEL_UP_MOVE\(\s*(\d+),\s*(MOVE_\w+)\)", raw[row["key"].replace("_", "")])]
+        if "curated_moves" in row:
+            moves = row.pop("curated_moves")
+        else:
+            moves = [(int(level), move) for level, move in re.findall(
+                r"LEVEL_UP_MOVE\(\s*(\d+),\s*(MOVE_\w+)\)", raw[row["key"].replace("_", "")])]
         moves = [(level, move_map.get(move, move)) for level, move in moves]
         invalid = {move for _, move in moves} - valid_moves
         if invalid:
@@ -109,9 +119,35 @@ def evolutions(rows):
     raw = dict(re.findall(r"\[SPECIES_(\w+)\]\s*=\s*(.*?)(?=\n\s*\[SPECIES_|\Z)", source, re.S))
     allowed = {row["key"] for row in rows}
     for row in rows:
-        choices = re.findall(r"\{EVO_LEVEL,\s*(\d+),\s*SPECIES_(\w+)\}", raw.get(row["key"], ""))
+        if "curated_evolutions" in row:
+            choices = row.pop("curated_evolutions")
+        else:
+            choices = re.findall(r"\{EVO_LEVEL,\s*(\d+),\s*SPECIES_(\w+)\}", raw.get(row["key"], ""))
+        # Item-conditioned entries come first: the engine takes the first match.
+        choices = EXTRA_EVOLUTIONS.get(row["key"], []) + [list(choice) for choice in choices]
         # Non-starters cannot yield an event-exclusive starter through evolution.
-        row["evolutions"] = [(int(level), target) for level, target in choices if target in allowed]
+        row["evolutions"] = [[int(choice[0])] + list(choice[1:]) for choice in choices if choice[1] in allowed]
+    inherit_growth(rows)
+
+
+def inherit_growth(rows):
+    """The engine recalculates level from experience, so a line must share one growth rate."""
+    by_key = {row["key"]: row for row in rows}
+    parents = {}
+    for row in rows:
+        for choice in row["evolutions"]:
+            parents.setdefault(choice[1], set()).add(row["key"])
+
+    def resolve(key):
+        if key in STARTER_CHAMPIONS:
+            return STARTER_GROWTH
+        rates = {resolve(parent) for parent in parents.get(key, ())}
+        if len(rates) > 1:
+            raise ValueError(f"Pre-evolutions of {key} disagree on growth rate: {rates}")
+        return rates.pop() if rates else by_key[key]["growthRate"]
+
+    for row in rows:
+        row["growthRate"] = resolve(row["key"])
 
 
 def field_guide(rows):
@@ -152,7 +188,10 @@ def species(row, dex):
     evo = ""
     if row["evolutions"]:
         evo = ".evolutions = EVOLUTION(" + ", ".join(
-            f"{{EVO_LEVEL, {level}, SPECIES_{target}}}" for level, target in row["evolutions"]) + "),"
+            f"{{EVO_LEVEL, {choice[0]}, SPECIES_{choice[1]}"
+            + (f", CONDITIONS({{IF_HOLD_ITEM, {choice[2]}}})" if len(choice) > 2 else "") + "}"
+            for choice in row["evolutions"]) + "),"
+    article = "an" if row["stage"][0] in "AEIOU" else "a"
     return f'''[SPECIES_{key}] = {{
 {stats}
     .types = MON_TYPES({", ".join(row["types"])}),
@@ -166,7 +205,7 @@ def species(row, dex):
     .speciesName = _("{row["name"]}"), .cryId = CRY_PORYGON,
     .natDexNum = NATIONAL_DEX_{key}, .categoryName = _("{row["stage"]}"),
     .height = 10, .weight = 200,
-    .description = COMPOUND_STRING("{row["name"]}, a {row["stage"]} Digimon.\\n"
+    .description = COMPOUND_STRING("{row["name"]}, {article} {row["stage"]} Digimon.\\n"
                                   "Attribute: {row["attribute"]}.\\n"
                                   "Recorded in the Digital Field Guide."),
     .pokemonScale = 256, .trainerScale = 256,
@@ -206,6 +245,8 @@ def main():
         ):
             graphics.append(f'const {ctype} gMon{prefix}_Roster{row["key"]}[] = '
                             f'INCGFX_{ctype.upper()}("graphics/pokemon/{row["slug"]}/{filename}.png", "{extension}");')
+    for row in ART_ONLY:
+        portraits(dict(row))
     field_guide(rows)
     attributes(rows)
     # Reuse legacy dex slots, keeping all three saved dex flag arrays the same size.

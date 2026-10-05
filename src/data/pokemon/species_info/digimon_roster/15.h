@@ -80,7 +80,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_SLOW,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLACK,
@@ -115,7 +115,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLUE,
@@ -136,7 +136,7 @@
     FOOTPRINT(QuestionMark)
     .levelUpLearnset = sRosterEXVEEMONMoves,
     .teachableLearnset = sDigimonLandTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
-    
+    .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PAILDRAMON, CONDITIONS({IF_HOLD_ITEM, ITEM_DNA_CHARGE})}),
 },
 
 [SPECIES_DRIMOGEMON] = {
@@ -290,7 +290,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ROUGH_SKIN, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLACK,
@@ -325,7 +325,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_ROCK_HEAD, ABILITY_ROUGH_SKIN, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BROWN,

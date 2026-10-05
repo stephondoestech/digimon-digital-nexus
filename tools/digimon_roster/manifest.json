@@ -163,6 +163,11 @@
       ],
       "evolutions": [
         [
+          20,
+          "DIGMON",
+          "ITEM_DIGI_EGG_KNOWLEDGE"
+        ],
+        [
           32,
           "ANKYLOMON"
         ]
@@ -3817,6 +3822,11 @@
         ]
       ],
       "evolutions": [
+        [
+          20,
+          "SHURIMON",
+          "ITEM_DIGI_EGG_SINCERITY"
+        ],
         [
           30,
           "AQUILAMON"
@@ -9214,6 +9224,16 @@
       ],
       "evolutions": [
         [
+          20,
+          "FLADRAMON",
+          "ITEM_DIGI_EGG_COURAGE"
+        ],
+        [
+          30,
+          "MAGNAMON",
+          "ITEM_DIGI_EGG_MIRACLES"
+        ],
+        [
           36,
           "EXVEEMON"
         ]
@@ -9514,7 +9534,12 @@
           "MOVE_X_SCISSOR"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          30,
+          "STINGMON"
+        ]
+      ],
       "source_sha256": "f807ea6fb4edf8948e0358e4b75c8d00d380c529ff7b1957c49b6c7ca2dd6cfd",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/wormmon/front.png",
       "dex": 104,
@@ -9715,7 +9740,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_OWN_TEMPO, ABILITY_NONE",
       "moves": [
@@ -9811,7 +9836,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_PRESSURE, ABILITY_NONE",
       "moves": [
@@ -9903,7 +9928,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_AIR_LOCK, ABILITY_MARVEL_SCALE",
       "moves": [
@@ -10007,7 +10032,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_FLASH_FIRE, ABILITY_EARLY_BIRD",
       "moves": [
@@ -10211,7 +10236,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_SHADOW_TAG, ABILITY_NONE",
       "moves": [
@@ -10327,7 +10352,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_BATTLE_ARMOR, ABILITY_NONE",
       "moves": [
@@ -10607,7 +10632,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_PURPLE",
       "abilities": "ABILITY_BATTLE_ARMOR, ABILITY_NONE",
       "moves": [
@@ -10892,7 +10917,12 @@
           "MOVE_ENDEAVOR"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "MAGNAANGEMON"
+        ]
+      ],
       "source_sha256": "9e20c2da1333908da09dc8186e838b53c71d60db79e90106451b69750413d9fe",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/angemon/front.png",
       "dex": 118,
@@ -11331,7 +11361,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_FLASH_FIRE, ABILITY_MAGMA_ARMOR",
       "moves": [
@@ -11424,7 +11454,12 @@
           "MOVE_METEOR_ASSAULT"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "GARUDAMON"
+        ]
+      ],
       "source_sha256": "693a9a7ecb388febc98da99d5abfad2708f3e1ce96cd5c6d67babde2d451816d",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/birdramon/front.png",
       "dex": 123,
@@ -11451,7 +11486,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_OWN_TEMPO, ABILITY_NONE",
       "moves": [
@@ -11551,7 +11586,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_INTIMIDATE, ABILITY_IMMUNITY",
       "moves": [
@@ -11663,7 +11698,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_SPEED_BOOST, ABILITY_NONE",
       "moves": [
@@ -11843,7 +11878,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH",
       "moves": [
@@ -12247,7 +12282,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_PRESSURE, ABILITY_NONE",
       "moves": [
@@ -12320,7 +12355,12 @@
           "MOVE_NIGHT_DAZE"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          45,
+          "MYOTISMON"
+        ]
+      ],
       "source_sha256": "118f4fe823df6f224eb430495af03f1207984a66a190a4238089acd20c70e2aa",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/devimon/front.png",
       "dex": 132,
@@ -12347,7 +12387,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_OBLIVIOUS, ABILITY_NONE",
       "moves": [
@@ -12447,7 +12487,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_STICKY_HOLD, ABILITY_SWARM",
       "moves": [
@@ -12567,7 +12607,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_SWARM, ABILITY_NONE",
       "moves": [
@@ -12979,7 +13019,7 @@
       },
       "catchRate": 120,
       "expYield": 104,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_ROCK_HEAD, ABILITY_NONE",
       "moves": [
@@ -13071,7 +13111,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GRAY",
       "abilities": "ABILITY_INNER_FOCUS, ABILITY_NONE",
       "moves": [
@@ -13175,7 +13215,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_PURPLE",
       "abilities": "ABILITY_SHELL_ARMOR, ABILITY_NONE",
       "moves": [
@@ -13287,7 +13327,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_CHLOROPHYLL, ABILITY_NATURAL_CURE",
       "moves": [
@@ -13403,7 +13443,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_INTIMIDATE, ABILITY_NONE",
       "moves": [
@@ -13507,7 +13547,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GRAY",
       "abilities": "ABILITY_ROUGH_SKIN, ABILITY_NONE",
       "moves": [
@@ -13903,7 +13943,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_HUGE_POWER, ABILITY_NONE",
       "moves": [
@@ -13999,7 +14039,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_STURDY, ABILITY_SWIFT_SWIM",
       "moves": [
@@ -14427,7 +14467,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_SLOW",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_LEVITATE, ABILITY_NONE",
       "moves": [
@@ -14523,7 +14563,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_VITAL_SPIRIT, ABILITY_NONE",
       "moves": [
@@ -14616,7 +14656,13 @@
           "MOVE_HYPER_VOICE"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "PAILDRAMON",
+          "ITEM_DNA_CHARGE"
+        ]
+      ],
       "source_sha256": "d5783514ac3eaa2cae0fc88fb91669b5c0653ba84ddf9170fb59385367aaabf2",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/exveemon/front.png",
       "dex": 154,
@@ -15023,7 +15069,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_HYPER_CUTTER, ABILITY_ROUGH_SKIN",
       "moves": [
@@ -15127,7 +15173,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BROWN",
       "abilities": "ABILITY_ROCK_HEAD, ABILITY_ROUGH_SKIN",
       "moves": [
@@ -15235,7 +15281,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_INNER_FOCUS, ABILITY_STICKY_HOLD",
       "moves": [
@@ -15447,7 +15493,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_INNER_FOCUS, ABILITY_NONE",
       "moves": [
@@ -15527,7 +15573,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GREEN",
       "abilities": "ABILITY_SHADOW_TAG, ABILITY_SYNCHRONIZE",
       "moves": [
@@ -15631,7 +15677,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_DROUGHT, ABILITY_BLAZE",
       "moves": [
@@ -15723,7 +15769,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_VITAL_SPIRIT, ABILITY_BLAZE",
       "moves": [
@@ -15835,7 +15881,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_BLAZE, ABILITY_NONE",
       "moves": [
@@ -16027,7 +16073,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_INTIMIDATE, ABILITY_LEVITATE",
       "moves": [
@@ -16231,7 +16277,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_INTIMIDATE, ABILITY_NONE",
       "moves": [
@@ -16319,7 +16365,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_FLASH_FIRE, ABILITY_MAGMA_ARMOR",
       "moves": [
@@ -16403,7 +16449,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_TORRENT, ABILITY_NONE",
       "moves": [
@@ -16487,7 +16533,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_VITAL_SPIRIT, ABILITY_NONE",
       "moves": [
@@ -16615,7 +16661,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_SAND_STREAM, ABILITY_NONE",
       "moves": [
@@ -16687,7 +16733,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GREEN",
       "abilities": "ABILITY_GUTS, ABILITY_NONE",
       "moves": [
@@ -16795,7 +16841,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLACK",
       "abilities": "ABILITY_PICKUP, ABILITY_NONE",
       "moves": [
@@ -16911,7 +16957,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_LIMBER, ABILITY_TRACE",
       "moves": [
@@ -17019,7 +17065,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_RUN_AWAY, ABILITY_NONE",
       "moves": [
@@ -17100,7 +17146,13 @@
           "MOVE_HYPER_BEAM"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "SILPHYMON",
+          "ITEM_DNA_CHARGE"
+        ]
+      ],
       "source_sha256": "5d3f943884199d670a0c7044a9cf9c45a04702fea4280f531127c6ede16c4e3d",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/aquilamon/front.png",
       "dex": 179,
@@ -17127,7 +17179,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_POISON_POINT, ABILITY_SWARM",
       "moves": [
@@ -17387,7 +17439,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_RED",
       "abilities": "ABILITY_GUTS, ABILITY_NONE",
       "moves": [
@@ -17479,7 +17531,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_STURDY, ABILITY_NONE",
       "moves": [
@@ -17555,7 +17607,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_VITAL_SPIRIT, ABILITY_NONE",
       "moves": [
@@ -17651,7 +17703,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GREEN",
       "abilities": "ABILITY_THICK_FAT, ABILITY_NONE",
       "moves": [
@@ -17739,7 +17791,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_INSOMNIA, ABILITY_NONE",
       "moves": [
@@ -17839,7 +17891,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_BLUE",
       "abilities": "ABILITY_SPEED_BOOST, ABILITY_NONE",
       "moves": [
@@ -17920,7 +17972,12 @@
           "MOVE_BLIZZARD"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "WEREGARURUMON"
+        ]
+      ],
       "source_sha256": "b1bc8b5a50e8585bf1c673b376f7f52de70a5dd95982336e4b21760cb38ac60b",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/garurumon/front.png",
       "dex": 188,
@@ -17947,7 +18004,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_GREEN",
       "abilities": "ABILITY_SUCTION_CUPS, ABILITY_NONE",
       "moves": [
@@ -18147,7 +18204,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_NATURAL_CURE, ABILITY_NONE",
       "moves": [
@@ -18220,7 +18277,17 @@
           "MOVE_DOUBLE_EDGE"
         ]
       ],
-      "evolutions": [],
+      "evolutions": [
+        [
+          32,
+          "SILPHYMON",
+          "ITEM_DNA_CHARGE"
+        ],
+        [
+          32,
+          "ANGEWOMON"
+        ]
+      ],
       "source_sha256": "e132732eb60513205126658c8f3af80efd93ced1a89db321a81f21782ac3b9a1",
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/gatomon/front.png",
       "dex": 191,
@@ -18247,7 +18314,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_YELLOW",
       "abilities": "ABILITY_STENCH, ABILITY_LIQUID_OOZE",
       "moves": [
@@ -18319,7 +18386,7 @@
       },
       "catchRate": 115,
       "expYield": 150,
-      "growthRate": "GROWTH_MEDIUM_SLOW",
+      "growthRate": "GROWTH_MEDIUM_FAST",
       "bodyColor": "BODY_COLOR_WHITE",
       "abilities": "ABILITY_SWIFT_SWIM, ABILITY_NONE",
       "moves": [
@@ -18385,6 +18452,1961 @@
       "source_url": "https://raw.githubusercontent.com/Luna3Step/DigimonEmerald/75a0c3642ee14311f08d41db23da3ddf52562577/graphics/pokemon/gesomon/front.png",
       "dex": 193,
       "species_id": 1775
+    },
+    {
+      "key": "KOROMON",
+      "name": "Koromon",
+      "slug": "koromon",
+      "donor_path": null,
+      "stage": "In-Training",
+      "types": [
+        "TYPE_NORMAL",
+        "TYPE_NORMAL"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 45,
+        "baseAttack": 40,
+        "baseDefense": 40,
+        "baseSpeed": 45,
+        "baseSpAttack": 35,
+        "baseSpDefense": 35
+      },
+      "catchRate": 190,
+      "expYield": 50,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_PINK",
+      "abilities": "ABILITY_RUN_AWAY, ABILITY_NONE",
+      "asset": 20462,
+      "wild": false,
+      "box": [
+        2,
+        14,
+        41,
+        46
+      ],
+      "moves": [
+        [
+          1,
+          "MOVE_BUBBLE"
+        ],
+        [
+          1,
+          "MOVE_GROWL"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          6,
+          "MOVE_QUICK_ATTACK"
+        ],
+        [
+          12,
+          "MOVE_BITE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "405839e9660c12d0601144644aefdf050eeecac9fcdcf2bdf4e0fa17903b1b5f",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/20462/",
+      "dex": 194,
+      "species_id": 1776
+    },
+    {
+      "key": "KABUTERIMON",
+      "name": "Kabuterimon",
+      "slug": "kabuterimon",
+      "donor_path": null,
+      "stage": "Champion",
+      "types": [
+        "TYPE_BUG",
+        "TYPE_ELECTRIC"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 75,
+        "baseAttack": 80,
+        "baseDefense": 80,
+        "baseSpeed": 70,
+        "baseSpAttack": 85,
+        "baseSpDefense": 70
+      },
+      "catchRate": 75,
+      "expYield": 160,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_SWARM, ABILITY_NONE",
+      "asset": 48595,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_SPARK"
+        ],
+        [
+          1,
+          "MOVE_FURY_CUTTER"
+        ],
+        [
+          1,
+          "MOVE_THUNDER_SHOCK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          20,
+          "MOVE_BUG_BITE"
+        ],
+        [
+          24,
+          "MOVE_THUNDER_WAVE"
+        ],
+        [
+          28,
+          "MOVE_SIGNAL_BEAM"
+        ],
+        [
+          34,
+          "MOVE_THUNDERBOLT"
+        ],
+        [
+          40,
+          "MOVE_X_SCISSOR"
+        ]
+      ],
+      "evolutions": [
+        [
+          32,
+          "MEGAKABUTERIMON"
+        ]
+      ],
+      "source_sha256": "0f80fd6d9c412e29aa07cc5fec2124ca11e8004e7c2ba70bd4a1523ed67ad216",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48595/",
+      "dex": 195,
+      "species_id": 1777
+    },
+    {
+      "key": "TOGEMON",
+      "name": "Togemon",
+      "slug": "togemon",
+      "donor_path": null,
+      "stage": "Champion",
+      "types": [
+        "TYPE_GRASS",
+        "TYPE_FIGHTING"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 80,
+        "baseAttack": 90,
+        "baseDefense": 85,
+        "baseSpeed": 55,
+        "baseSpAttack": 65,
+        "baseSpDefense": 85
+      },
+      "catchRate": 75,
+      "expYield": 160,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_GREEN",
+      "abilities": "ABILITY_IRON_FIST, ABILITY_NONE",
+      "asset": 48326,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_PIN_MISSILE"
+        ],
+        [
+          1,
+          "MOVE_MACH_PUNCH"
+        ],
+        [
+          1,
+          "MOVE_RAZOR_LEAF"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          20,
+          "MOVE_NEEDLE_ARM"
+        ],
+        [
+          24,
+          "MOVE_DRAIN_PUNCH"
+        ],
+        [
+          28,
+          "MOVE_BULLET_SEED"
+        ],
+        [
+          34,
+          "MOVE_SPIKY_SHIELD"
+        ],
+        [
+          40,
+          "MOVE_HAMMER_ARM"
+        ]
+      ],
+      "evolutions": [
+        [
+          32,
+          "LILLYMON"
+        ]
+      ],
+      "source_sha256": "b37f0d8a84a5ca419685143b721fbbfb5ba7b1522ddcdb4a0ee94b2d62436db8",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48326/",
+      "dex": 196,
+      "species_id": 1778
+    },
+    {
+      "key": "IKKAKUMON",
+      "name": "Ikkakumon",
+      "slug": "ikkakumon",
+      "donor_path": null,
+      "stage": "Champion",
+      "types": [
+        "TYPE_WATER",
+        "TYPE_ICE"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 90,
+        "baseAttack": 80,
+        "baseDefense": 80,
+        "baseSpeed": 55,
+        "baseSpAttack": 80,
+        "baseSpDefense": 75
+      },
+      "catchRate": 75,
+      "expYield": 160,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_WHITE",
+      "abilities": "ABILITY_THICK_FAT, ABILITY_NONE",
+      "asset": 48556,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_WATER_GUN"
+        ],
+        [
+          1,
+          "MOVE_HORN_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_POWDER_SNOW"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          20,
+          "MOVE_AQUA_JET"
+        ],
+        [
+          24,
+          "MOVE_ICE_SHARD"
+        ],
+        [
+          28,
+          "MOVE_HORN_DRILL"
+        ],
+        [
+          34,
+          "MOVE_ICE_BEAM"
+        ],
+        [
+          40,
+          "MOVE_WATERFALL"
+        ]
+      ],
+      "evolutions": [
+        [
+          32,
+          "ZUDOMON"
+        ]
+      ],
+      "source_sha256": "ba15c401d35f6e021b345576c3936771f30f922464eac3f7eebf60adf1922df7",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48556/",
+      "dex": 197,
+      "species_id": 1779
+    },
+    {
+      "key": "KUWAGAMON",
+      "name": "Kuwagamon",
+      "slug": "kuwagamon",
+      "donor_path": null,
+      "stage": "Champion",
+      "types": [
+        "TYPE_BUG",
+        "TYPE_DARK"
+      ],
+      "attribute": "Virus",
+      "stats": {
+        "baseHP": 70,
+        "baseAttack": 105,
+        "baseDefense": 85,
+        "baseSpeed": 75,
+        "baseSpAttack": 55,
+        "baseSpDefense": 70
+      },
+      "catchRate": 75,
+      "expYield": 160,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_RED",
+      "abilities": "ABILITY_HYPER_CUTTER, ABILITY_NONE",
+      "asset": 41254,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_VICE_GRIP"
+        ],
+        [
+          1,
+          "MOVE_FURY_CUTTER"
+        ],
+        [
+          1,
+          "MOVE_BITE"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          16,
+          "MOVE_BUG_BITE"
+        ],
+        [
+          18,
+          "MOVE_SCARY_FACE"
+        ],
+        [
+          24,
+          "MOVE_CRUNCH"
+        ],
+        [
+          30,
+          "MOVE_X_SCISSOR"
+        ],
+        [
+          38,
+          "MOVE_GUILLOTINE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "0768be4829150b65979bd279824285bc21327f7d729fd14069f48de9dfe8d88d",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/41254/",
+      "dex": 198,
+      "species_id": 1780
+    },
+    {
+      "key": "STINGMON",
+      "name": "Stingmon",
+      "slug": "stingmon",
+      "donor_path": null,
+      "stage": "Champion",
+      "types": [
+        "TYPE_BUG",
+        "TYPE_FIGHTING"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 70,
+        "baseAttack": 95,
+        "baseDefense": 65,
+        "baseSpeed": 95,
+        "baseSpAttack": 55,
+        "baseSpDefense": 70
+      },
+      "catchRate": 75,
+      "expYield": 160,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_GREEN",
+      "abilities": "ABILITY_SNIPER, ABILITY_NONE",
+      "asset": 48591,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_POISON_STING"
+        ],
+        [
+          1,
+          "MOVE_FURY_CUTTER"
+        ],
+        [
+          1,
+          "MOVE_QUICK_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          30,
+          "MOVE_POISON_JAB"
+        ],
+        [
+          34,
+          "MOVE_BRICK_BREAK"
+        ],
+        [
+          38,
+          "MOVE_MEGAHORN"
+        ],
+        [
+          44,
+          "MOVE_CLOSE_COMBAT"
+        ]
+      ],
+      "evolutions": [
+        [
+          32,
+          "PAILDRAMON",
+          "ITEM_DNA_CHARGE"
+        ]
+      ],
+      "source_sha256": "30d75e60562f5785955e8c2d6b8d67a525cc1e5b61f0b2909d89a6c9ec82615f",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48591/",
+      "dex": 199,
+      "species_id": 1781
+    },
+    {
+      "key": "METALGREYMON",
+      "name": "MetalGreymon",
+      "slug": "metalgreymon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_FIRE",
+        "TYPE_STEEL"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 115,
+        "baseDefense": 95,
+        "baseSpeed": 75,
+        "baseSpAttack": 90,
+        "baseSpDefense": 75
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_TOUGH_CLAWS, ABILITY_NONE",
+      "asset": 48322,
+      "wild": false,
+      "box": [
+        0,
+        0,
+        130,
+        130
+      ],
+      "moves": [
+        [
+          1,
+          "MOVE_FLAMETHROWER"
+        ],
+        [
+          1,
+          "MOVE_METAL_CLAW"
+        ],
+        [
+          1,
+          "MOVE_DRAGON_CLAW"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_FLASH_CANNON"
+        ],
+        [
+          36,
+          "MOVE_IRON_HEAD"
+        ],
+        [
+          42,
+          "MOVE_FLARE_BLITZ"
+        ],
+        [
+          46,
+          "MOVE_GIGA_IMPACT"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "WARGREYMON"
+        ]
+      ],
+      "source_sha256": "69e02a4f6a6332a0e8120f6e241c7b46a52f85594848436336ba1788f3091b79",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48322/",
+      "dex": 200,
+      "species_id": 1782
+    },
+    {
+      "key": "WEREGARURUMON",
+      "name": "WereGarurmon",
+      "slug": "weregarurumon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_ICE",
+        "TYPE_FIGHTING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 80,
+        "baseAttack": 115,
+        "baseDefense": 75,
+        "baseSpeed": 105,
+        "baseSpAttack": 70,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_INNER_FOCUS, ABILITY_NONE",
+      "asset": 48684,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_ICE_FANG"
+        ],
+        [
+          1,
+          "MOVE_LOW_KICK"
+        ],
+        [
+          1,
+          "MOVE_QUICK_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_ICE_PUNCH"
+        ],
+        [
+          36,
+          "MOVE_BLAZE_KICK"
+        ],
+        [
+          42,
+          "MOVE_CLOSE_COMBAT"
+        ],
+        [
+          46,
+          "MOVE_ICICLE_CRASH"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "METALGARURUMON"
+        ]
+      ],
+      "source_sha256": "097afd92e6adb96812e7130655f7e4db9cbb35c41ff456aed357eeeaa9005303",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48684/",
+      "dex": 201,
+      "species_id": 1783
+    },
+    {
+      "key": "GARUDAMON",
+      "name": "Garudamon",
+      "slug": "garudamon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_FIRE",
+        "TYPE_FLYING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 110,
+        "baseDefense": 80,
+        "baseSpeed": 90,
+        "baseSpAttack": 85,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_RED",
+      "abilities": "ABILITY_FLAME_BODY, ABILITY_NONE",
+      "asset": 48715,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_FLAME_WHEEL"
+        ],
+        [
+          1,
+          "MOVE_WING_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_FIRE_PUNCH"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_AERIAL_ACE"
+        ],
+        [
+          36,
+          "MOVE_BLAZE_KICK"
+        ],
+        [
+          42,
+          "MOVE_BRAVE_BIRD"
+        ],
+        [
+          46,
+          "MOVE_FIRE_BLAST"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "PHOENIXMON"
+        ]
+      ],
+      "source_sha256": "e5a0ca0a698475bc0ce5a97ba8fab68b4be1ef06a9c1193a6fb61b147285f121",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48715/",
+      "dex": 202,
+      "species_id": 1784
+    },
+    {
+      "key": "MEGAKABUTERIMON",
+      "name": "MKabuterimon",
+      "slug": "megakabuterimon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_BUG",
+        "TYPE_ELECTRIC"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 90,
+        "baseAttack": 100,
+        "baseDefense": 105,
+        "baseSpeed": 60,
+        "baseSpAttack": 95,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_RED",
+      "abilities": "ABILITY_SWARM, ABILITY_NONE",
+      "asset": 48529,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_THUNDERBOLT"
+        ],
+        [
+          1,
+          "MOVE_X_SCISSOR"
+        ],
+        [
+          1,
+          "MOVE_HORN_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_WILD_CHARGE"
+        ],
+        [
+          36,
+          "MOVE_MEGAHORN"
+        ],
+        [
+          42,
+          "MOVE_ZAP_CANNON"
+        ],
+        [
+          46,
+          "MOVE_THUNDER"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "HERCULESKABUTERIMON"
+        ]
+      ],
+      "source_sha256": "2baae99ed783787fbdd9730f823d3e95ac9420098d8b4ceca16198ff730b9d29",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48529/",
+      "dex": 203,
+      "species_id": 1785
+    },
+    {
+      "key": "LILLYMON",
+      "name": "Lillymon",
+      "slug": "lillymon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_GRASS",
+        "TYPE_FAIRY"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 70,
+        "baseAttack": 60,
+        "baseDefense": 70,
+        "baseSpeed": 105,
+        "baseSpAttack": 120,
+        "baseSpDefense": 105
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_PINK",
+      "abilities": "ABILITY_FLOWER_VEIL, ABILITY_NONE",
+      "asset": 41255,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_MAGICAL_LEAF"
+        ],
+        [
+          1,
+          "MOVE_FAIRY_WIND"
+        ],
+        [
+          1,
+          "MOVE_SWEET_SCENT"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_DRAINING_KISS"
+        ],
+        [
+          36,
+          "MOVE_ENERGY_BALL"
+        ],
+        [
+          42,
+          "MOVE_MOONBLAST"
+        ],
+        [
+          46,
+          "MOVE_PETAL_DANCE"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "ROSEMON"
+        ]
+      ],
+      "source_sha256": "98a90cbacddb41121fc24712b06eb5c166b362da1247ad3648faf90a778ea7ba",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/41255/",
+      "dex": 204,
+      "species_id": 1786
+    },
+    {
+      "key": "ZUDOMON",
+      "name": "Zudomon",
+      "slug": "zudomon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_WATER",
+        "TYPE_STEEL"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 100,
+        "baseAttack": 115,
+        "baseDefense": 100,
+        "baseSpeed": 50,
+        "baseSpAttack": 75,
+        "baseSpDefense": 90
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BROWN",
+      "abilities": "ABILITY_THICK_FAT, ABILITY_NONE",
+      "asset": 48539,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_WATERFALL"
+        ],
+        [
+          1,
+          "MOVE_ICE_FANG"
+        ],
+        [
+          1,
+          "MOVE_HORN_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_IRON_HEAD"
+        ],
+        [
+          36,
+          "MOVE_HAMMER_ARM"
+        ],
+        [
+          42,
+          "MOVE_LIQUIDATION"
+        ],
+        [
+          46,
+          "MOVE_HEAVY_SLAM"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "VIKEMON"
+        ]
+      ],
+      "source_sha256": "8555150213888b5fdde3ded9a43c54facc60386a975ad909638f13ebbb8537db",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48539/",
+      "dex": 205,
+      "species_id": 1787
+    },
+    {
+      "key": "MAGNAANGEMON",
+      "name": "MagnaAngemon",
+      "slug": "magnaangemon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_FAIRY",
+        "TYPE_FLYING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 105,
+        "baseDefense": 85,
+        "baseSpeed": 85,
+        "baseSpAttack": 95,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_PURPLE",
+      "abilities": "ABILITY_JUSTIFIED, ABILITY_NONE",
+      "asset": 48701,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_SACRED_SWORD"
+        ],
+        [
+          1,
+          "MOVE_AIR_SLASH"
+        ],
+        [
+          1,
+          "MOVE_AURA_SPHERE"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_PLAY_ROUGH"
+        ],
+        [
+          36,
+          "MOVE_SWORDS_DANCE"
+        ],
+        [
+          42,
+          "MOVE_MOONBLAST"
+        ],
+        [
+          46,
+          "MOVE_SACRED_FIRE"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "SERAPHIMON"
+        ]
+      ],
+      "source_sha256": "b090a5d292b5792dd971e55820e5f6ab182992abd8b8d70edcda1bdfb6c170f1",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48701/",
+      "dex": 206,
+      "species_id": 1788
+    },
+    {
+      "key": "ANGEWOMON",
+      "name": "Angewomon",
+      "slug": "angewomon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_FAIRY",
+        "TYPE_FLYING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 75,
+        "baseAttack": 70,
+        "baseDefense": 75,
+        "baseSpeed": 100,
+        "baseSpAttack": 115,
+        "baseSpDefense": 100
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_WHITE",
+      "abilities": "ABILITY_MAGIC_GUARD, ABILITY_NONE",
+      "asset": 48625,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_DAZZLING_GLEAM"
+        ],
+        [
+          1,
+          "MOVE_AIR_SLASH"
+        ],
+        [
+          1,
+          "MOVE_CHARM"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_AURA_SPHERE"
+        ],
+        [
+          36,
+          "MOVE_WISH"
+        ],
+        [
+          42,
+          "MOVE_MOONBLAST"
+        ],
+        [
+          46,
+          "MOVE_HURRICANE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "21d69df2c16248ca7c0566209a0515fb8a95597b01c9186b4537006a94024658",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48625/",
+      "dex": 207,
+      "species_id": 1789
+    },
+    {
+      "key": "ETEMON",
+      "name": "Etemon",
+      "slug": "etemon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_DARK",
+        "TYPE_NORMAL"
+      ],
+      "attribute": "Virus",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 100,
+        "baseDefense": 75,
+        "baseSpeed": 90,
+        "baseSpAttack": 90,
+        "baseSpDefense": 85
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BROWN",
+      "abilities": "ABILITY_PUNK_ROCK, ABILITY_NONE",
+      "asset": 48430,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_BOOMBURST"
+        ],
+        [
+          1,
+          "MOVE_SUCKER_PUNCH"
+        ],
+        [
+          1,
+          "MOVE_TAUNT"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          24,
+          "MOVE_HYPER_VOICE"
+        ],
+        [
+          30,
+          "MOVE_CRUNCH"
+        ],
+        [
+          36,
+          "MOVE_NASTY_PLOT"
+        ],
+        [
+          42,
+          "MOVE_DARK_PULSE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "2d48660a8dd2597474b3e0072ef732ea41250dde5a404f9030d6a2c3fed9b5bd",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48430/",
+      "dex": 208,
+      "species_id": 1790
+    },
+    {
+      "key": "MYOTISMON",
+      "name": "Myotismon",
+      "slug": "myotismon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_DARK",
+        "TYPE_GHOST"
+      ],
+      "attribute": "Virus",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 90,
+        "baseDefense": 75,
+        "baseSpeed": 95,
+        "baseSpAttack": 115,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_PRESSURE, ABILITY_NONE",
+      "asset": 48609,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_NIGHT_SHADE"
+        ],
+        [
+          1,
+          "MOVE_LEECH_LIFE"
+        ],
+        [
+          1,
+          "MOVE_CONFUSE_RAY"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          45,
+          "MOVE_SHADOW_BALL"
+        ],
+        [
+          49,
+          "MOVE_DARK_PULSE"
+        ],
+        [
+          53,
+          "MOVE_NASTY_PLOT"
+        ],
+        [
+          57,
+          "MOVE_NIGHT_DAZE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "a2dbbf4264078ddc52d5b5ead9fbbfbbfee8673b493ca80a4c529c8fd6fd26d3",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48609/",
+      "dex": 209,
+      "species_id": 1791
+    },
+    {
+      "key": "PAILDRAMON",
+      "name": "Paildramon",
+      "slug": "paildramon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_DRAGON",
+        "TYPE_BUG"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 110,
+        "baseDefense": 85,
+        "baseSpeed": 100,
+        "baseSpAttack": 85,
+        "baseSpDefense": 75
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_TOUGH_CLAWS, ABILITY_NONE",
+      "asset": 48721,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_DRAGON_CLAW"
+        ],
+        [
+          1,
+          "MOVE_X_SCISSOR"
+        ],
+        [
+          1,
+          "MOVE_PIN_MISSILE"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_DRAGON_RUSH"
+        ],
+        [
+          36,
+          "MOVE_U_TURN"
+        ],
+        [
+          42,
+          "MOVE_OUTRAGE"
+        ],
+        [
+          46,
+          "MOVE_MEGAHORN"
+        ]
+      ],
+      "evolutions": [
+        [
+          48,
+          "IMPERIALDRAMON"
+        ]
+      ],
+      "source_sha256": "38cc00150145057ae04a57dd3490adba7fed4fa226c50e889f9f360cd9319c89",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48721/",
+      "dex": 210,
+      "species_id": 1792
+    },
+    {
+      "key": "SILPHYMON",
+      "name": "Silphymon",
+      "slug": "silphymon",
+      "donor_path": null,
+      "stage": "Ultimate",
+      "types": [
+        "TYPE_FLYING",
+        "TYPE_FAIRY"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 80,
+        "baseAttack": 90,
+        "baseDefense": 75,
+        "baseSpeed": 110,
+        "baseSpAttack": 105,
+        "baseSpDefense": 80
+      },
+      "catchRate": 45,
+      "expYield": 210,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_RED",
+      "abilities": "ABILITY_KEEN_EYE, ABILITY_NONE",
+      "asset": 48683,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_AIR_SLASH"
+        ],
+        [
+          1,
+          "MOVE_AURA_SPHERE"
+        ],
+        [
+          1,
+          "MOVE_QUICK_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          32,
+          "MOVE_PLAY_ROUGH"
+        ],
+        [
+          36,
+          "MOVE_ROOST"
+        ],
+        [
+          42,
+          "MOVE_BRAVE_BIRD"
+        ],
+        [
+          46,
+          "MOVE_MOONBLAST"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "e276a80b34a1a4a0280a855462be54b9d3f5229897572b9f5762f3cb14daf55b",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48683/",
+      "dex": 211,
+      "species_id": 1793
+    },
+    {
+      "key": "SHURIMON",
+      "name": "Shurimon",
+      "slug": "shurimon",
+      "donor_path": null,
+      "stage": "Armor",
+      "types": [
+        "TYPE_GRASS",
+        "TYPE_WATER"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 65,
+        "baseAttack": 95,
+        "baseDefense": 65,
+        "baseSpeed": 115,
+        "baseSpAttack": 70,
+        "baseSpDefense": 65
+      },
+      "catchRate": 60,
+      "expYield": 175,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_GREEN",
+      "abilities": "ABILITY_TECHNICIAN, ABILITY_NONE",
+      "asset": 48547,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_RAZOR_LEAF"
+        ],
+        [
+          1,
+          "MOVE_WATER_SHURIKEN"
+        ],
+        [
+          1,
+          "MOVE_QUICK_ATTACK"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          24,
+          "MOVE_LEAF_BLADE"
+        ],
+        [
+          30,
+          "MOVE_AQUA_JET"
+        ],
+        [
+          36,
+          "MOVE_U_TURN"
+        ],
+        [
+          42,
+          "MOVE_LEAF_STORM"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "c236501328d4a74551d8e532b74c9c5b1f9e7d6f298cabdec7bf03912e1f985f",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48547/",
+      "dex": 212,
+      "species_id": 1794
+    },
+    {
+      "key": "MAGNAMON",
+      "name": "Magnamon",
+      "slug": "magnamon",
+      "donor_path": null,
+      "stage": "Armor",
+      "types": [
+        "TYPE_STEEL",
+        "TYPE_FAIRY"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 80,
+        "baseAttack": 100,
+        "baseDefense": 105,
+        "baseSpeed": 95,
+        "baseSpAttack": 80,
+        "baseSpDefense": 85
+      },
+      "catchRate": 60,
+      "expYield": 175,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_YELLOW",
+      "abilities": "ABILITY_FULL_METAL_BODY, ABILITY_NONE",
+      "asset": 48681,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_METAL_CLAW"
+        ],
+        [
+          1,
+          "MOVE_DAZZLING_GLEAM"
+        ],
+        [
+          1,
+          "MOVE_PROTECT"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          40,
+          "MOVE_IRON_HEAD"
+        ],
+        [
+          44,
+          "MOVE_PLAY_ROUGH"
+        ],
+        [
+          48,
+          "MOVE_IRON_DEFENSE"
+        ],
+        [
+          54,
+          "MOVE_METEOR_MASH"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "7a4d248f3354ca0772c5ef282a282406c8f2724bdbb57fc7a461bb8e3eb2edad",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48681/",
+      "dex": 213,
+      "species_id": 1795
+    },
+    {
+      "key": "WARGREYMON",
+      "name": "WarGreymon",
+      "slug": "wargreymon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_FIRE",
+        "TYPE_FIGHTING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 90,
+        "baseAttack": 135,
+        "baseDefense": 100,
+        "baseSpeed": 100,
+        "baseSpAttack": 90,
+        "baseSpDefense": 85
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_YELLOW",
+      "abilities": "ABILITY_INTIMIDATE, ABILITY_NONE",
+      "asset": 48613,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_FLARE_BLITZ"
+        ],
+        [
+          1,
+          "MOVE_DRAGON_CLAW"
+        ],
+        [
+          1,
+          "MOVE_CLOSE_COMBAT"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_DRAGON_DANCE"
+        ],
+        [
+          54,
+          "MOVE_SACRED_FIRE"
+        ],
+        [
+          60,
+          "MOVE_V_CREATE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "a627f58642cb1a7e7897df32033b19e82f0d1bc2400b855e83a04f5d4cec10ea",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48613/",
+      "dex": 214,
+      "species_id": 1796
+    },
+    {
+      "key": "METALGARURUMON",
+      "name": "MtlGarurumon",
+      "slug": "metalgarurumon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_ICE",
+        "TYPE_STEEL"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 100,
+        "baseDefense": 90,
+        "baseSpeed": 120,
+        "baseSpAttack": 115,
+        "baseSpDefense": 90
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_ICE_BODY, ABILITY_NONE",
+      "asset": 48720,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_ICE_BEAM"
+        ],
+        [
+          1,
+          "MOVE_FLASH_CANNON"
+        ],
+        [
+          1,
+          "MOVE_ICE_FANG"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_FREEZE_DRY"
+        ],
+        [
+          54,
+          "MOVE_BLIZZARD"
+        ],
+        [
+          60,
+          "MOVE_STEEL_BEAM"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "a60d2af8ce42e3fc667c182cd5e7a6fd33af33c95512572162fd1afea25c0013",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48720/",
+      "dex": 215,
+      "species_id": 1797
+    },
+    {
+      "key": "PHOENIXMON",
+      "name": "Phoenixmon",
+      "slug": "phoenixmon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_FIRE",
+        "TYPE_FLYING"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 95,
+        "baseAttack": 100,
+        "baseDefense": 85,
+        "baseSpeed": 110,
+        "baseSpAttack": 115,
+        "baseSpDefense": 95
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_YELLOW",
+      "abilities": "ABILITY_REGENERATOR, ABILITY_NONE",
+      "asset": 48722,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_FIRE_BLAST"
+        ],
+        [
+          1,
+          "MOVE_AIR_SLASH"
+        ],
+        [
+          1,
+          "MOVE_ROOST"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_HEAT_WAVE"
+        ],
+        [
+          54,
+          "MOVE_HURRICANE"
+        ],
+        [
+          60,
+          "MOVE_SACRED_FIRE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "f2f15d2a748c67b5deee6a4f0a787b675d9982de866e604ce52790d09d49f559",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48722/",
+      "dex": 216,
+      "species_id": 1798
+    },
+    {
+      "key": "HERCULESKABUTERIMON",
+      "name": "HKabuterimon",
+      "slug": "herculeskabuterimon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_BUG",
+        "TYPE_ELECTRIC"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 100,
+        "baseAttack": 125,
+        "baseDefense": 120,
+        "baseSpeed": 65,
+        "baseSpAttack": 105,
+        "baseSpDefense": 85
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_YELLOW",
+      "abilities": "ABILITY_LIGHTNING_ROD, ABILITY_NONE",
+      "asset": 48530,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_MEGAHORN"
+        ],
+        [
+          1,
+          "MOVE_THUNDERBOLT"
+        ],
+        [
+          1,
+          "MOVE_IRON_DEFENSE"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_ZAP_CANNON"
+        ],
+        [
+          54,
+          "MOVE_FIRST_IMPRESSION"
+        ],
+        [
+          60,
+          "MOVE_BOLT_STRIKE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "135cd39d6597910249130da63fff30bfad9b5df408987ee4c87a33948f727279",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48530/",
+      "dex": 217,
+      "species_id": 1799
+    },
+    {
+      "key": "ROSEMON",
+      "name": "Rosemon",
+      "slug": "rosemon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_GRASS",
+        "TYPE_FAIRY"
+      ],
+      "attribute": "Data",
+      "stats": {
+        "baseHP": 85,
+        "baseAttack": 80,
+        "baseDefense": 85,
+        "baseSpeed": 115,
+        "baseSpAttack": 135,
+        "baseSpDefense": 100
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_RED",
+      "abilities": "ABILITY_TRIAGE, ABILITY_NONE",
+      "asset": 48453,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_PETAL_BLIZZARD"
+        ],
+        [
+          1,
+          "MOVE_MOONBLAST"
+        ],
+        [
+          1,
+          "MOVE_POWER_WHIP"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_PETAL_DANCE"
+        ],
+        [
+          54,
+          "MOVE_QUIVER_DANCE"
+        ],
+        [
+          60,
+          "MOVE_FLEUR_CANNON"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "f670eeb904b1190d51d2d919438a5a9d9e36034d126efe62a8dd200690a37691",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48453/",
+      "dex": 218,
+      "species_id": 1800
+    },
+    {
+      "key": "VIKEMON",
+      "name": "Vikemon",
+      "slug": "vikemon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_WATER",
+        "TYPE_ICE"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 120,
+        "baseAttack": 125,
+        "baseDefense": 105,
+        "baseSpeed": 60,
+        "baseSpAttack": 85,
+        "baseSpDefense": 105
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_WHITE",
+      "abilities": "ABILITY_THICK_FAT, ABILITY_NONE",
+      "asset": 48538,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_ICICLE_CRASH"
+        ],
+        [
+          1,
+          "MOVE_LIQUIDATION"
+        ],
+        [
+          1,
+          "MOVE_HAMMER_ARM"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_WAVE_CRASH"
+        ],
+        [
+          54,
+          "MOVE_BLIZZARD"
+        ],
+        [
+          60,
+          "MOVE_GLACIAL_LANCE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "e68ade1ba2d1f166f6b7e17f329de187087f3755872717231fd9b2236c43375a",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48538/",
+      "dex": 219,
+      "species_id": 1801
+    },
+    {
+      "key": "SERAPHIMON",
+      "name": "Seraphimon",
+      "slug": "seraphimon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_FAIRY",
+        "TYPE_STEEL"
+      ],
+      "attribute": "Vaccine",
+      "stats": {
+        "baseHP": 95,
+        "baseAttack": 105,
+        "baseDefense": 100,
+        "baseSpeed": 95,
+        "baseSpAttack": 115,
+        "baseSpDefense": 90
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLUE",
+      "abilities": "ABILITY_JUSTIFIED, ABILITY_NONE",
+      "asset": 48694,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_SACRED_SWORD"
+        ],
+        [
+          1,
+          "MOVE_FLASH_CANNON"
+        ],
+        [
+          1,
+          "MOVE_MOONBLAST"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_JUDGMENT"
+        ],
+        [
+          54,
+          "MOVE_LIGHT_OF_RUIN"
+        ],
+        [
+          60,
+          "MOVE_SACRED_FIRE"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "ad73d586df382e852ef50f8c993434ae946880a281e52338729cc09799b8b444",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48694/",
+      "dex": 220,
+      "species_id": 1802
+    },
+    {
+      "key": "BLACKWARGREYMON",
+      "name": "BWarGreymon",
+      "slug": "blackwargreymon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_DARK",
+        "TYPE_FIGHTING"
+      ],
+      "attribute": "Virus",
+      "stats": {
+        "baseHP": 90,
+        "baseAttack": 135,
+        "baseDefense": 100,
+        "baseSpeed": 100,
+        "baseSpAttack": 90,
+        "baseSpDefense": 85
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLACK",
+      "abilities": "ABILITY_MOXIE, ABILITY_NONE",
+      "asset": 48585,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_NIGHT_SLASH"
+        ],
+        [
+          1,
+          "MOVE_DRAGON_CLAW"
+        ],
+        [
+          1,
+          "MOVE_CLOSE_COMBAT"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_DRAGON_DANCE"
+        ],
+        [
+          54,
+          "MOVE_WICKED_BLOW"
+        ],
+        [
+          60,
+          "MOVE_FOUL_PLAY"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "017afa83398bc95a05eab8a19e4b835d7ea46b38e0cb0f1849b063b2c2164ac9",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48585/",
+      "dex": 221,
+      "species_id": 1803
+    },
+    {
+      "key": "IMPERIALDRAMON",
+      "name": "Imperialdrmn",
+      "slug": "imperialdramon",
+      "donor_path": null,
+      "stage": "Mega",
+      "types": [
+        "TYPE_DRAGON",
+        "TYPE_STEEL"
+      ],
+      "attribute": "Free",
+      "stats": {
+        "baseHP": 100,
+        "baseAttack": 130,
+        "baseDefense": 95,
+        "baseSpeed": 95,
+        "baseSpAttack": 100,
+        "baseSpDefense": 80
+      },
+      "catchRate": 15,
+      "expYield": 270,
+      "growthRate": "GROWTH_MEDIUM_FAST",
+      "bodyColor": "BODY_COLOR_BLACK",
+      "abilities": "ABILITY_PRESSURE, ABILITY_NONE",
+      "asset": 48608,
+      "wild": false,
+      "moves": [
+        [
+          1,
+          "MOVE_DRAGON_RUSH"
+        ],
+        [
+          1,
+          "MOVE_FLASH_CANNON"
+        ],
+        [
+          1,
+          "MOVE_DRAGON_CLAW"
+        ],
+        [
+          1,
+          "MOVE_TACKLE"
+        ],
+        [
+          48,
+          "MOVE_OUTRAGE"
+        ],
+        [
+          54,
+          "MOVE_DRACO_METEOR"
+        ],
+        [
+          60,
+          "MOVE_DYNAMAX_CANNON"
+        ]
+      ],
+      "evolutions": [],
+      "source_sha256": "fa9131718a8381a246a25b701adb1611c39e8a65598d7cdd2da624151aacf89c",
+      "source_url": "https://www.spriters-resource.com/ds_dsi/dgmnworldds/asset/48608/",
+      "dex": 222,
+      "species_id": 1804
     }
   ]
 }

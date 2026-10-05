@@ -11,12 +11,13 @@
 #error Digimon scanning requires the reserved SaveBlock2 dex bytes
 #endif
 static const u8 sScanHeader[] = { 'D', 'S', 'C', 1 };
-STATIC_ASSERT(4 + (DIGIMON_ROSTER_COUNT + 1) / 2 <= sizeof(((struct Pokedex *)0)->filler), scan_storage_fits);
+STATIC_ASSERT(4 + (DIGIMON_WILD_ROSTER_COUNT + 1) / 2 <= sizeof(((struct Pokedex *)0)->filler), scan_storage_fits);
 STATIC_ASSERT(SPECIES_EGG - SPECIES_ANGORAMON == DIGIMON_ROSTER_COUNT, scan_roster_count);
+STATIC_ASSERT(SPECIES_KOROMON - SPECIES_ANGORAMON == DIGIMON_WILD_ROSTER_COUNT, scan_wild_roster_count);
 
 bool32 Digimon_CanScan(enum Species species)
 {
-    return species >= SPECIES_ANGORAMON && species < SPECIES_EGG;
+    return species >= SPECIES_ANGORAMON && species < SPECIES_ANGORAMON + DIGIMON_WILD_ROSTER_COUNT;
 }
 
 static bool32 HasScanData(void)

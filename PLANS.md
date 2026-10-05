@@ -4,11 +4,12 @@ Goal: testers play a 30–60 minute original slice (Village of Beginnings →
 File Island Forest → Ancient Ruins → Kuwagamon), not the Hoenn shell. Full
 scope is in PLAN.md §13.1 (Milestone 13) and §38.5 (Milestone 13.5).
 
-- [ ] 0. Commit the current Digimon work on `develop` (developer action).
+- [x] 0. Commit the current Digimon work on `develop` (developer action).
 - [ ] 1. New-game entry into Village of Beginnings; starter event there; Hoenn warps locked.
 - [ ] 2. Four new maps: Village hub, Forest, Ruins (2F), Sanctum boss room.
-- [ ] 3. Import Kuwagamon, Kabuterimon, Togemon, Ikkakumon; roster-check passes.
-- [ ] 4. Lv 16 Champion evolution for all eight starters.
+- [x] 3. Import Kuwagamon, Kabuterimon, Togemon, Ikkakumon; roster-check passes.
+  Imported with 25 more from Digimon World DS sheets (docs/digimon/DIGIVOLUTION.md).
+- [x] 4. Lv 16 Champion evolution for all eight starters, with a runtime test.
 - [ ] 5. Slice encounters, 4–6 Tamers, Kuwagamon Lv 18 boss, end-of-playtest scene.
 - [ ] 6. One post-boss Digivice capability.
 - [ ] 7. Scrub Pokémon text reachable in the slice, and add a slice text check.

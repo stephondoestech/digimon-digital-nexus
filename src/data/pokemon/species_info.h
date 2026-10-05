@@ -309,6 +309,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sGreymonLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_METALGREYMON}),
     },
 
     [SPECIES_TYRANNOMON] =
@@ -343,8 +344,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        // Greymon art is shared temporarily until a Tyrannomon sheet is sourced.
-        .frontPic = gMonFrontPic_Greymon,
+        // Digimon World DS battle art; see ASSET_SOURCES.md.
+        .frontPic = gMonFrontPic_Tyrannomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 1 : 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -352,13 +353,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Greymon,
+        .backPic = gMonBackPic_Tyrannomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Greymon,
-        .shinyPalette = gMonShinyPalette_Greymon,
-        .iconSprite = gMonIcon_Greymon,
+        .palette = gMonPalette_Tyrannomon,
+        .shinyPalette = gMonShinyPalette_Tyrannomon,
+        .iconSprite = gMonIcon_Tyrannomon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 13, SHADOW_SIZE_L)
@@ -413,6 +414,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Gabumon, Cyndaquil, CRY_CYNDAQUIL)
         .levelUpLearnset = sGabumonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GARURUMON}),
     },
 
     [SPECIES_BIYOMON] =
@@ -427,6 +429,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Biyomon, Pidgey, CRY_PIDGEY)
         .levelUpLearnset = sBiyomonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BIRDRAMON}),
     },
 
     [SPECIES_TENTOMON] =
@@ -441,6 +444,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Tentomon, Paras, CRY_PARAS)
         .levelUpLearnset = sTentomonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KABUTERIMON}),
     },
 
     [SPECIES_PALMON] =
@@ -455,6 +459,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Palmon, Bellsprout, CRY_BELLSPROUT)
         .levelUpLearnset = sPalmonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_TOGEMON}),
     },
 
     [SPECIES_GOMAMON] =
@@ -469,6 +474,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Gomamon, Seel, CRY_SEEL)
         .levelUpLearnset = sGomamonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IKKAKUMON}),
     },
 
     [SPECIES_PATAMON] =
@@ -483,6 +489,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Patamon, Zubat, CRY_ZUBAT)
         .levelUpLearnset = sPatamonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_ANGEMON}),
     },
 
     [SPECIES_SALAMON] =
@@ -497,6 +504,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Digimon battle art and icon; cry/footprint/follower remain temporary.
         ROOKIE_GRAPHICS(Salamon, Growlithe, CRY_GROWLITHE)
         .levelUpLearnset = sSalamonLevelUpLearnset, .teachableLearnset = sNoneTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GATOMON}),
     },
 
 #undef ROOKIE_GRAPHICS

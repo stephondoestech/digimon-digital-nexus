@@ -45,7 +45,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_SHADOW_TAG, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_WHITE,
@@ -80,7 +80,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_BLUE,
@@ -185,7 +185,7 @@
     .catchRate = 115, .expYield = 150,
     .evYield_HP = 1,
     .genderRatio = MON_GENDERLESS, .eggCycles = 20,
-    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_SLOW,
+    .friendship = STANDARD_FRIENDSHIP, .growthRate = GROWTH_MEDIUM_FAST,
     .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_NONE },
     .bodyColor = BODY_COLOR_PURPLE,
@@ -276,7 +276,7 @@
     FOOTPRINT(QuestionMark)
     .levelUpLearnset = sRosterANGEMONMoves,
     .teachableLearnset = sDigimonFlyingTeachableLearnset, .eggMoveLearnset = sNoneEggMoveLearnset,
-    
+    .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MAGNAANGEMON}),
 },
 
 [SPECIES_ANKYLOMON] = {

@@ -16,3 +16,5 @@
 #include "digimon_roster/14.h"
 #include "digimon_roster/15.h"
 #include "digimon_roster/16.h"
+#include "digimon_roster/17.h"
+#include "digimon_roster/18.h"
