@@ -1006,7 +1006,7 @@ void ChooseStarter(void)
     gMain.savedCallback = CB2_GiveStarter;
 }
 
-static void CB2_GiveStarter(void)
+static void GiveChosenStarter(void)
 {
     u16 starterMon;
 
@@ -1015,6 +1015,24 @@ static void CB2_GiveStarter(void)
     starterMon = GetStarterPokemon(gSpecialVar_Result);
     if (ScriptGiveMon(starterMon, 5, ITEM_NONE) == MON_GIVEN_TO_PARTY)
         Digimon_RegisterPartner(&gParties[B_TRAINER_PLAYER][gPartiesCount[B_TRAINER_PLAYER] - 1]);
+}
+
+static void CB2_GiveStarterNoBattle(void)
+{
+    GiveChosenStarter();
+    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+}
+
+// Primary Village: the Digivice choice without Route 101's rescue battle.
+void ChooseStarterNoBattle(void)
+{
+    SetMainCallback2(CB2_ChooseStarter);
+    gMain.savedCallback = CB2_GiveStarterNoBattle;
+}
+
+static void CB2_GiveStarter(void)
+{
+    GiveChosenStarter();
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

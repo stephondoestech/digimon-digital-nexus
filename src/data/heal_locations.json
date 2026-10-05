@@ -349,6 +349,22 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_PRIMARY_VILLAGE",
+      "map": "MAP_FILE_ISLAND_PRIMARY_VILLAGE",
+      "x": 8,
+      "y": 10,
+      "respawn_map": "MAP_FILE_ISLAND_PRIMARY_VILLAGE_RECOVERY_TERMINAL",
+      "respawn_npc": "LOCALID_PRIMARY_VILLAGE_MONZAEMON"
+    },
+    {
+      "id": "HEAL_LOCATION_FACTORIAL_TOWN",
+      "map": "MAP_FILE_ISLAND_FACTORIAL_TOWN",
+      "x": 10,
+      "y": 11,
+      "respawn_map": "MAP_FILE_ISLAND_FACTORIAL_TOWN_RECOVERY_TERMINAL",
+      "respawn_npc": "LOCALID_FACTORIAL_TOWN_MONZAEMON"
     }
   ]
 }

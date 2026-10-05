@@ -646,3 +646,4 @@ gSpecials::
 	def_special Digimon_GuideStatus
 	def_special Digimon_GuideEvolution
 	def_special Digimon_GuideReconstruct
+	def_special ChooseStarterNoBattle, waitstate=1

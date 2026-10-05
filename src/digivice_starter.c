@@ -20,7 +20,9 @@
 #include "constants/songs.h"
 
 static EWRAM_DATA u8 sChoice = 0;
-static EWRAM_DATA u16 sPortrait = 0;
+// All portraits are created once and only shown/hidden, so browsing never loads
+// sprite graphics or palettes mid-frame (that caused flicker between choices).
+static EWRAM_DATA u16 sPortraits[DIGIMON_STARTER_COUNT] = {0};
 static EWRAM_DATA bool8 sConfirm = FALSE;
 static EWRAM_DATA bool8 sClosing = FALSE;
 
@@ -60,7 +62,7 @@ static void Rect(u8 color, u16 x, u16 y, u16 width, u16 height)
     FillWindowPixelRect(0, PIXEL_FILL(color), x, y, width, height);
 }
 
-static void DrawScreen(void)
+static void DrawScreen(bool32 browseOnly)
 {
     u8 prompt[64];
     FillWindowPixelBuffer(0, PIXEL_FILL(1));
@@ -102,26 +104,44 @@ static void DrawScreen(void)
         Print(8, 20, prompt, FALSE);
     }
     Print(8, 144, sConfirm ? sConfirmControls : sControls, FALSE);
+    if (browseOnly)
+    {
+        // Only the LCD labels and the partner list change while browsing.
+        CopyWindowRectToVram(0, COPYWIN_GFX, 6, 4, 24, 13);
+        return;
+    }
     PutWindowTilemap(0);
     CopyWindowToVram(0, COPYWIN_FULL);
 }
 
-static void DestroyPortrait(void)
+static void CreatePortraits(void)
 {
-    if (sPortrait != 0xFFFF)
+    for (u32 i = 0; i < DIGIMON_STARTER_COUNT; i++)
     {
-        FreeAndDestroyMonPicSprite(sPortrait);
-        sPortrait = 0xFFFF;
+        // One OBJ palette slot each (8-15) so hidden portraits keep their colours.
+        sPortraits[i] = CreateMonPicSprite(GetStarterPokemon(i), FALSE, 0, TRUE, 60, 71, 8 + i, TAG_NONE);
+        if (sPortraits[i] != 0xFFFF)
+            gSprites[sPortraits[i]].oam.priority = 0;
     }
 }
 
-static void RefreshPortrait(void)
+static void ShowPortrait(void)
 {
-    DestroyPortrait();
-    sPortrait = CreateMonPicSprite(GetStarterPokemon(sChoice), FALSE, 0,
-        TRUE, 60, 71, 14, TAG_NONE);
-    if (sPortrait != 0xFFFF)
-        gSprites[sPortrait].oam.priority = 0;
+    for (u32 i = 0; i < DIGIMON_STARTER_COUNT; i++)
+    {
+        if (sPortraits[i] != 0xFFFF)
+            gSprites[sPortraits[i]].invisible = (i != sChoice);
+    }
+}
+
+static void DestroyPortraits(void)
+{
+    for (u32 i = 0; i < DIGIMON_STARTER_COUNT; i++)
+    {
+        if (sPortraits[i] != 0xFFFF)
+            FreeAndDestroyMonPicSprite(sPortraits[i]);
+        sPortraits[i] = 0xFFFF;
+    }
 }
 
 static void Task_Choose(u8 taskId)
@@ -131,7 +151,7 @@ static void Task_Choose(u8 taskId)
     if (sClosing)
     {
         gSpecialVar_Result = sChoice;
-        DestroyPortrait();
+        DestroyPortraits();
         ResetAllPicSprites();
         FreeAllWindowBuffers();
         DestroyTask(taskId);
@@ -144,7 +164,7 @@ static void Task_Choose(u8 taskId)
         {
             sConfirm = FALSE;
             PlaySE(SE_SELECT);
-            DrawScreen();
+            DrawScreen(FALSE);
         }
         else if (JOY_NEW(A_BUTTON))
         {
@@ -158,7 +178,7 @@ static void Task_Choose(u8 taskId)
     {
         sConfirm = TRUE;
         PlaySE(SE_SELECT);
-        DrawScreen();
+        DrawScreen(FALSE);
     }
     else if (JOY_REPEAT(DPAD_UP | DPAD_DOWN))
     {
@@ -167,8 +187,8 @@ static void Task_Choose(u8 taskId)
         else
             sChoice = (sChoice + 1) % DIGIMON_STARTER_COUNT;
         PlaySE(SE_SELECT);
-        RefreshPortrait();
-        DrawScreen();
+        ShowPortrait();
+        DrawScreen(TRUE);
     }
 }
 
@@ -211,11 +231,11 @@ void CB2_DigiviceStarter(void)
     ResetAllPicSprites();
     LoadPalette(sPalette, 0, sizeof(sPalette));
     sChoice = 0;
-    sPortrait = 0xFFFF;
     sConfirm = FALSE;
     sClosing = FALSE;
-    DrawScreen();
-    RefreshPortrait();
+    DrawScreen(FALSE);
+    CreatePortraits();
+    ShowPortrait();
     CreateTask(Task_Choose, 0);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
     EnableInterrupts(DISPSTAT_VBLANK);

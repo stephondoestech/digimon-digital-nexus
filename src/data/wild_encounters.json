@@ -36577,6 +36577,894 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_SHORELINE",
+          "base_label": "gFileIsland_Shoreline",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_CRABMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_BETAMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SYAKOMON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_GAZIMON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_OTAMAMON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_KAMEMON"
+              },
+              {
+                "min_level": 4,
+                "max_level": 5,
+                "species": "SPECIES_CRABMON"
+              },
+              {
+                "min_level": 4,
+                "max_level": 5,
+                "species": "SPECIES_BETAMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_CRABMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_BETAMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SYAKOMON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_GAZIMON"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_BETAMON"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_OTAMAMON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_SWIMMON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_CRABMON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_GIZAMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_NATIVE_FOREST",
+          "base_label": "gFileIsland_NativeForest",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_KUNEMON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_FLORAMON"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_GOBLIMON"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_ELECMON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_MUSHROOMON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_LABRAMON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_ARURAUMON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_DOKUNEMON"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_FANBEEMON"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_LALAMON"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_KUNEMON"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_ELECMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_ANCIENT_RUINS_1F",
+          "base_label": "gFileIsland_AncientRuins_1F",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 9,
+                "max_level": 11,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 9,
+                "max_level": 11,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_GHOSTMON"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_HAGURUMON"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_DEMIDEVMON"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_KERAMON"
+              },
+              {
+                "min_level": 11,
+                "max_level": 13,
+                "species": "SPECIES_TSUKAIMON"
+              },
+              {
+                "min_level": 11,
+                "max_level": 13,
+                "species": "SPECIES_ARMADILMON"
+              },
+              {
+                "min_level": 12,
+                "max_level": 13,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 12,
+                "max_level": 13,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 13,
+                "max_level": 14,
+                "species": "SPECIES_GHOSTMON"
+              },
+              {
+                "min_level": 13,
+                "max_level": 14,
+                "species": "SPECIES_HAGURUMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_ANCIENT_RUINS_2F",
+          "base_label": "gFileIsland_AncientRuins_2F",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 12,
+                "max_level": 14,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 12,
+                "max_level": 14,
+                "species": "SPECIES_GHOSTMON"
+              },
+              {
+                "min_level": 13,
+                "max_level": 15,
+                "species": "SPECIES_PHASCOMON"
+              },
+              {
+                "min_level": 13,
+                "max_level": 15,
+                "species": "SPECIES_TSUKAIMON"
+              },
+              {
+                "min_level": 13,
+                "max_level": 15,
+                "species": "SPECIES_SUNARZAMON"
+              },
+              {
+                "min_level": 14,
+                "max_level": 15,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_KERAMON"
+              },
+              {
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_DEMIDEVMON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 16,
+                "species": "SPECIES_PHASCOMON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 16,
+                "species": "SPECIES_TSUKAIMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 17,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 17,
+                "species": "SPECIES_SUNARZAMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_DRAGON_EYE_LAKE",
+          "base_label": "gFileIsland_DragonEyeLake",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_SWIMMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_OTAMAMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_GIZAMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_MODBETAMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_KAMEMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_SYAKOMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_CRABMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_SANGOMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_JELLYMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_SWIMMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_OTAMAMON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_GIZAMON"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_SWIMMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_GEKOMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_OTAMAMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_GESOMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_JELLYMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_FREEZELAND",
+          "base_label": "gFileIsland_Freezeland",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PENGUINMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_BULUCOMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PSYCHEMON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FRIGIMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PENGUINMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_BULUCOMON"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_GARURUMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PENGUINMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_BULUCOMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PSYCHEMON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FRIGIMON"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_PENGUINMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_FREEZE_CAVERN",
+          "base_label": "gFileIsland_FreezeCavern",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 27,
+                "max_level": 30,
+                "species": "SPECIES_FRIGIMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PENGUINMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_BULUCOMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PSYCHEMON"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_GARURUMON"
+              },
+              {
+                "min_level": 27,
+                "max_level": 30,
+                "species": "SPECIES_FRIGIMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PENGUINMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_BULUCOMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PSYCHEMON"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_GARURUMON"
+              },
+              {
+                "min_level": 27,
+                "max_level": 30,
+                "species": "SPECIES_FRIGIMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PENGUINMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_OVERDELL",
+          "base_label": "gFileIsland_Overdell",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GHOSTMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_TSUKAIMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_BAKEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_DEMIDEVMON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_DEXDORUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHASCOMON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_EYESMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_BAKOMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GHOSTMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_TSUKAIMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_BAKEMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_MT_INFINITY",
+          "base_label": "gFileIsland_MtInfinity",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 30,
+                "max_level": 34,
+                "species": "SPECIES_DEVIDRAMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 34,
+                "species": "SPECIES_AIRDRAMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_DIATRYMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_AKATORIMON"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_GARGOYLMON"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOOGIEMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 34,
+                "species": "SPECIES_DEVIDRAMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 34,
+                "species": "SPECIES_AIRDRAMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_DIATRYMON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_AKATORIMON"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_GARGOYLMON"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOOGIEMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_MT_INFINITY_CAVE",
+          "base_label": "gFileIsland_MtInfinityCave",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 33,
+                "max_level": 37,
+                "species": "SPECIES_DEVIMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 37,
+                "species": "SPECIES_DEVIDRAMON"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_DARKTYRMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_BOOGIEMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_GARGOYLMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_FANGMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 37,
+                "species": "SPECIES_DEVIMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 37,
+                "species": "SPECIES_DEVIDRAMON"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_DARKTYRMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_BOOGIEMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_GARGOYLMON"
+              },
+              {
+                "min_level": 33,
+                "max_level": 36,
+                "species": "SPECIES_FANGMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_GEAR_SAVANNA",
+          "base_label": "gFileIsland_GearSavanna",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_ELECMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_HAGURUMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_KOKUWAMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_SUNARZAMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_ZENIMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_DORUMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_BEARMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_ELEPHANMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_BULLMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_ELECMON"
+              },
+              {
+                "min_level": 18,
+                "max_level": 23,
+                "species": "SPECIES_HAGURUMON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FILE_ISLAND_DRILL_TUNNEL",
+          "base_label": "gFileIsland_DrillTunnel",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HAGURUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ARMADILMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GIZUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_DRIMOGEMON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_DIGMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GOTSUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HAGURUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ARMADILMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GIZUMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAMON"
+              }
+            ]
+          }
         }
       ]
     },

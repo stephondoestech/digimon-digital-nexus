@@ -1,0 +1,14 @@
+FileIsland_FactorialTown_RecoveryTerminal_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, FileIsland_FactorialTown_RecoveryTerminal_OnTransition
+	.byte 0
+
+FileIsland_FactorialTown_RecoveryTerminal_OnTransition:
+	setrespawn HEAL_LOCATION_FACTORIAL_TOWN
+	end
+
+FileIsland_FactorialTown_RecoveryTerminal_EventScript_Monzaemon::
+	lock
+	faceplayer
+	call FileIsland_EventScript_RecoveryTerminal
+	release
+	end

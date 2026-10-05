@@ -40,6 +40,9 @@ def main():
     slot = 0
     for group in data["wild_encounter_groups"]:
         for encounter in group.get("encounters", []):
+            # File Island tables are hand-themed by tools/digimon_maps.
+            if encounter.get("map", "").startswith("MAP_FILE_ISLAND_"):
+                continue
             for field, details in encounter.items():
                 if not field.endswith("_mons") or not isinstance(details, dict):
                     continue

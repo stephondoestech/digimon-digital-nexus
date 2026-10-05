@@ -9323,6 +9323,171 @@
       "border_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_PRIMARY_VILLAGE",
+      "name": "FileIsland_PrimaryVillage_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FileIsland_PrimaryVillage/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_PrimaryVillage/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_SHORELINE",
+      "name": "FileIsland_Shoreline_Layout",
+      "width": 32,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/FileIsland_Shoreline/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_Shoreline/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_NATIVE_FOREST",
+      "name": "FileIsland_NativeForest_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/FileIsland_NativeForest/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_NativeForest/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_ANCIENT_RUINS_1F",
+      "name": "FileIsland_AncientRuins_1F_Layout",
+      "width": 32,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_AncientRuins_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_AncientRuins_1F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_ANCIENT_RUINS_2F",
+      "name": "FileIsland_AncientRuins_2F_Layout",
+      "width": 26,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_AncientRuins_2F/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_AncientRuins_2F/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_RUINS_SANCTUM",
+      "name": "FileIsland_RuinsSanctum_Layout",
+      "width": 16,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_RuinsSanctum/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_RuinsSanctum/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_DRAGON_EYE_LAKE",
+      "name": "FileIsland_DragonEyeLake_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/FileIsland_DragonEyeLake/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_DragonEyeLake/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_FREEZELAND",
+      "name": "FileIsland_Freezeland_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/FileIsland_Freezeland/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_Freezeland/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_FREEZE_CAVERN",
+      "name": "FileIsland_FreezeCavern_Layout",
+      "width": 30,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_FreezeCavern/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_FreezeCavern/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_OVERDELL",
+      "name": "FileIsland_Overdell_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/FileIsland_Overdell/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_Overdell/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_MT_INFINITY",
+      "name": "FileIsland_MtInfinity_Layout",
+      "width": 32,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FileIsland_MtInfinity/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_MtInfinity/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_MT_INFINITY_CAVE",
+      "name": "FileIsland_MtInfinityCave_Layout",
+      "width": 28,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_MtInfinityCave/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_MtInfinityCave/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_GEAR_SAVANNA",
+      "name": "FileIsland_GearSavanna_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/FileIsland_GearSavanna/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_GearSavanna/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_DRILL_TUNNEL",
+      "name": "FileIsland_DrillTunnel_Layout",
+      "width": 36,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FileIsland_DrillTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_DrillTunnel/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_FILE_ISLAND_FACTORIAL_TOWN",
+      "name": "FileIsland_FactorialTown_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FileIsland_FactorialTown/border.bin",
+      "blockdata_filepath": "data/layouts/FileIsland_FactorialTown/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

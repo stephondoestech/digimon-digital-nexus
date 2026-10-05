@@ -1,0 +1,35 @@
+{
+  "id": "MAP_FILE_ISLAND_MT_INFINITY",
+  "name": "FileIsland_MtInfinity",
+  "layout": "LAYOUT_FILE_ISLAND_MT_INFINITY",
+  "music": "MUS_MT_CHIMNEY",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_MT_INFINITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_FILE_ISLAND_OVERDELL",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FILE_ISLAND_MT_INFINITY_CAVE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

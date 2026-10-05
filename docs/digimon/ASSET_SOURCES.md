@@ -45,6 +45,20 @@ license; retain credits and resolve rights before release.
 DigiEgg and DNA Charge items temporarily reuse the Fire/Leaf/Sun/Dusk Stone
 and Linking Cord icons.
 
+## Digimon NPC overworld sprites — 2026-10-04
+
+Jijimon, Leomon, Digitamamon, Monzaemon, Andromon and Kuwagamon field sprites
+come from the same Digimon World DS sheets (redblueyellow; Kuwagamon's battle
+sheet above). `tools/digimon_maps/npc_sprites.py` cuts each sheet's 3x5 grid
+of isometric field frames into Gen 3's nine NPC frames (front-left serves as
+down and left, back-left as up; right mirrors left), quantizes to 16 colours
+and generates the object graphics tables. The 16x16 Digivice and data-chip
+pickup sprites are original drawings made by that script.
+
+The new-game guide portrait (`graphics/birch_speech/birch.png`, replacing
+Professor Birch) is Jijimon's first battle pose from the same redblueyellow
+sheet, area-averaged to 64x64 by `npc_sprites.py`.
+
 ## Agumon Overworld Sprite
 
 The initial Agumon overworld sprite is derived from the community-provided

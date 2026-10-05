@@ -1,0 +1,165 @@
+{
+  "id": "MAP_FILE_ISLAND_PRIMARY_VILLAGE",
+  "name": "FileIsland_PrimaryVillage",
+  "layout": "LAYOUT_FILE_ISLAND_PRIMARY_VILLAGE",
+  "music": "MUS_LITTLEROOT",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_PRIMARY_VILLAGE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_FILE_ISLAND_NATIVE_FOREST",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_FILE_ISLAND_SHORELINE",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_PRIMARY_VILLAGE_DIGIVICE",
+      "graphics_id": "OBJ_EVENT_GFX_DIGIMON_DIGIVICE",
+      "x": 15,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_Digivice",
+      "flag": "FLAG_FILE_ISLAND_DIGIVICE_TAKEN"
+    },
+    {
+      "local_id": "LOCALID_PRIMARY_VILLAGE_LEOMON",
+      "graphics_id": "OBJ_EVENT_GFX_DIGIMON_LEOMON",
+      "x": 17,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_Leomon",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_FILE_ISLAND_PRIMARY_VILLAGE_RECOVERY_TERMINAL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_FILE_ISLAND_PRIMARY_VILLAGE_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_FILE_ISLAND_PRIMARY_VILLAGE_ELDER_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "FileIsland_PrimaryVillage_EventScript_NeedPartnerSouth"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FileIsland_PrimaryVillage_EventScript_Sign"
+    }
+  ]
+}

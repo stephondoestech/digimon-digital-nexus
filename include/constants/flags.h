@@ -51,13 +51,13 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
+#define FLAG_FILE_ISLAND_DIGIVICE_TAKEN 0x20 // Village of Beginnings starter Digivice collected
+#define FLAG_DEFEATED_KUWAGAMON 0x21 // Ruins Sanctum boss; opens the rest of File Island
+#define FLAG_ITEM_ANCIENT_RUINS_2F_DIGI_EGG_COURAGE 0x22
+#define FLAG_ITEM_DRILL_TUNNEL_DNA_CHARGE 0x23
+#define FLAG_ITEM_FREEZE_CAVERN_DIGI_EGG_KNOWLEDGE 0x24
+#define FLAG_ITEM_OVERDELL_DIGI_EGG_SINCERITY 0x25
+#define FLAG_ITEM_MT_INFINITY_CAVE_DIGI_EGG_MIRACLES 0x26
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag

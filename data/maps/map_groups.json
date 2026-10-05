@@ -74,7 +74,8 @@
     "gMapGroup_IndoorFiveIslandRoute_Frlg",
     "gMapGroup_IndoorTwoIslandRoute_Frlg",
     "gMapGroup_IndoorSixIslandRoute_Frlg",
-    "gMapGroup_IndoorSevenIslandRoute_Frlg"
+    "gMapGroup_IndoorSevenIslandRoute_Frlg",
+    "gMapGroup_FileIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1160,5 +1161,26 @@
   ],
   "gMapGroup_IndoorSevenIslandRoute_Frlg": [
     "SevenIsland_SevaultCanyon_House_Frlg"
+  ],
+  "gMapGroup_FileIsland": [
+    "FileIsland_PrimaryVillage",
+    "FileIsland_PrimaryVillage_RecoveryTerminal",
+    "FileIsland_PrimaryVillage_Shop",
+    "FileIsland_PrimaryVillage_ElderHouse",
+    "FileIsland_Shoreline",
+    "FileIsland_NativeForest",
+    "FileIsland_AncientRuins_1F",
+    "FileIsland_AncientRuins_2F",
+    "FileIsland_RuinsSanctum",
+    "FileIsland_DragonEyeLake",
+    "FileIsland_Freezeland",
+    "FileIsland_FreezeCavern",
+    "FileIsland_Overdell",
+    "FileIsland_MtInfinity",
+    "FileIsland_MtInfinityCave",
+    "FileIsland_GearSavanna",
+    "FileIsland_DrillTunnel",
+    "FileIsland_FactorialTown",
+    "FileIsland_FactorialTown_RecoveryTerminal"
   ]
 }

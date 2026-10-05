@@ -1,0 +1,56 @@
+{
+  "id": "MAP_FILE_ISLAND_OVERDELL",
+  "name": "FileIsland_Overdell",
+  "layout": "LAYOUT_FILE_ISLAND_OVERDELL",
+  "music": "MUS_MT_PYRE_EXTERIOR",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_OVERDELL",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_HORIZONTAL",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_FILE_ISLAND_MT_INFINITY",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_FILE_ISLAND_NATIVE_FOREST",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_FILE_ISLAND_FREEZELAND",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_FILE_ISLAND_FACTORIAL_TOWN",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIGIMON_DATA_CHIP",
+      "x": 5,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DIGI_EGG_SINCERITY",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_OVERDELL_DIGI_EGG_SINCERITY"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}
