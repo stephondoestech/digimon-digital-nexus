@@ -1,6 +1,6 @@
 """Native Forest and the Ancient Ruins dungeon (the playtest slice route)."""
 from .common import (CAVE, LADDER_DOWN, LADDER_UP, OUTDOOR, SIZE, STAMPS, TREE_BORDER, Canvas,
-                     gate, item, obj, opening)
+                     gate, item, obj, opening, tamer)
 
 F = "FileIsland_NativeForest"
 CAVE_TILES = {"primary": "gTileset_General", "secondary": "gTileset_Cave", "legend": CAVE,
@@ -28,7 +28,11 @@ def native_forest():
                         ("left", "MAP_FILE_ISLAND_DRAGON_EYE_LAKE", 0), ("right", "MAP_FILE_ISLAND_GEAR_SAVANNA", 0)],
         "warps": [(24, 9, "MAP_FILE_ISLAND_ANCIENT_RUINS_1F", 0)],
         "objects": gate(F, [(x, 3) for x in range(14, 18)] + [(3, y) for y in range(14, 18)]
-                        + [(28, y) for y in range(14, 18)]),
+                        + [(28, y) for y in range(14, 18)]) + [
+            tamer("OBJ_EVENT_GFX_YOUNGSTER", 14, 23, f"{F}_EventScript_Kai", "RIGHT", 3),
+            tamer("OBJ_EVENT_GFX_LASS", 9, 19, f"{F}_EventScript_Mia", "DOWN", 4),
+            tamer("OBJ_EVENT_GFX_CAMPER", 21, 11, f"{F}_EventScript_Ren", "LEFT", 4),
+        ],
         "wild": {"land_mons": ([("KUNEMON", 3, 5), ("FLORAMON", 3, 5), ("GOBLIMON", 4, 6), ("ELECMON", 4, 6),
                                 ("MUSHROOMON", 5, 7), ("LABRAMON", 5, 7), ("ARURAUMON", 6, 8), ("DOKUNEMON", 6, 8),
                                 ("FANBEEMON", 7, 9), ("LALAMON", 7, 9), ("KUNEMON", 9, 10), ("ELECMON", 9, 10)], 3, 6)},
@@ -41,6 +45,7 @@ def ruins_1f():
     c.rect(".", 4, 4, 20, 7).rect(".", 22, 4, 27, 12).rect(".", 20, 10, 27, 12).rect(".", 24, 12, 27, 20)
     return {**CAVE_TILES, "name": "FileIsland_AncientRuins_1F", "ascii": c.ascii(),
             "stamps": [("cave_exit", 14, 23)], "blocks": {(26, 18): LADDER_UP},
+            "objects": [tamer("OBJ_EVENT_GFX_MANIAC", 6, 9, "FileIsland_AncientRuins_1F_EventScript_Oda", "DOWN", 5)],
             "warps": [(15, 23, "MAP_FILE_ISLAND_NATIVE_FOREST", 0), (26, 18, "MAP_FILE_ISLAND_ANCIENT_RUINS_2F", 0)],
             "wild": {"land_mons": ([("GOTSUMON", 9, 11), ("BAKOMON", 9, 11), ("GHOSTMON", 10, 12),
                                     ("HAGURUMON", 10, 12), ("DEMIDEVMON", 10, 12), ("KERAMON", 11, 12),
@@ -55,7 +60,9 @@ def ruins_2f():
     return {**CAVE_TILES, "name": "FileIsland_AncientRuins_2F", "ascii": c.ascii(),
             "blocks": {(20, 21): LADDER_DOWN, (12, 11): LADDER_UP},
             "warps": [(20, 21, "MAP_FILE_ISLAND_ANCIENT_RUINS_1F", 1), (12, 11, "MAP_FILE_ISLAND_RUINS_SANCTUM", 0)],
-            "objects": [item(4, 4, "ITEM_DIGI_EGG_COURAGE", "FLAG_ITEM_ANCIENT_RUINS_2F_DIGI_EGG_COURAGE")],
+            "objects": [item(4, 4, "ITEM_DIGI_EGG_COURAGE", "FLAG_ITEM_ANCIENT_RUINS_2F_DIGI_EGG_COURAGE"),
+                        tamer("OBJ_EVENT_GFX_PICNICKER", 4, 12, "FileIsland_AncientRuins_2F_EventScript_Sora", "DOWN", 4),
+                        tamer("OBJ_EVENT_GFX_HIKER", 12, 7, "FileIsland_AncientRuins_2F_EventScript_Jun", "DOWN", 3)],
             "wild": {"land_mons": ([("BAKOMON", 12, 14), ("GHOSTMON", 12, 14), ("PHASCOMON", 13, 15),
                                     ("TSUKAIMON", 13, 15), ("SUNARZAMON", 13, 15), ("GOTSUMON", 14, 15),
                                     ("KERAMON", 14, 16), ("DEMIDEVMON", 14, 16), ("PHASCOMON", 15, 16),

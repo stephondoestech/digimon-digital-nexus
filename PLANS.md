@@ -12,8 +12,8 @@ scope is in PLAN.md §13.1 (Milestone 13) and §38.5 (Milestone 13.5).
 - [x] 3. Import Kuwagamon, Kabuterimon, Togemon, Ikkakumon; roster-check passes.
   Imported with 25 more from Digimon World DS sheets (docs/digimon/DIGIVOLUTION.md).
 - [x] 4. Lv 16 Champion evolution for all eight starters, with a runtime test.
-- [ ] 5. Slice encounters, 4–6 Tamers, Kuwagamon Lv 18 boss, end-of-playtest scene.
-  Encounters, Kuwagamon boss and end-of-playtest message done; Tamers remain.
+- [x] 5. Slice encounters, 4–6 Tamers, Kuwagamon Lv 18 boss, end-of-playtest scene.
+  Six TAMER-class trainers (Lv 5–16) in the forest and ruins; see docs/digimon/FILE_ISLAND.md.
 - [ ] 6. One post-boss Digivice capability.
 - [ ] 7. Scrub Pokémon text reachable in the slice, and add a slice text check.
 - [ ] 8. Runtime tests: starter evolutions, boss data, save layout unchanged.

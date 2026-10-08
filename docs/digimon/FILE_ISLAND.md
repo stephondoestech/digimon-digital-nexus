@@ -54,6 +54,22 @@ village, Jijimon is the elder, Digitamamon runs the shop, Monzaemon heals at
 both Recovery Terminals (lab interiors), Andromon is in Factorial Town and
 Kuwagamon waits in the Sanctum. Items are data chips instead of Poké Balls.
 
-Tilesets reuse Emerald's until Milestone 29. Known placeholders: the shop
-uses the Mart interior, and there are no Tamers yet. Engine-wide Pokémon
+Six Tamers (class TAMER, Emerald kid/hiker sprites) line the slice route, using
+the spare trainer-flag slots 855–860 so the save layout is unchanged:
+
+| Tamer | Where | Team |
+| --- | --- | --- |
+| Kai | Native Forest, main path | Gazimon 5 |
+| Mia | Native Forest, south-west grass | Floramon 6, Lalamon 7 |
+| Ren | Native Forest, path to the ruins | Elecmon 8, Goblimon 9 |
+| Oda | Ancient Ruins 1F | Gotsumon 11, Hagurumon 12 |
+| Sora | Ancient Ruins 2F | Bakomon 13, Ghostmon 13, DemiDevimon 14 |
+| Jun | Ancient Ruins 2F, by the Sanctum ladder | Tsukaimon 15, Phascomon 16 |
+
+`make roster-check` also runs `tools/digimon_maps/test_island.py`, which checks
+that every warp lands on a warp that leads back, connections are mirrored, and
+Tamer teams stay in their level band.
+
+Tilesets reuse Emerald's until Milestone 29. Known placeholder: the shop uses
+the Mart interior. Engine-wide Pokémon
 wording (battle text, bag pockets, summary screens) is plan step 7.

@@ -605,6 +605,7 @@ leafgreen: all
 .PHONY: roster-check roster-generate
 roster-check:
 	python3 tools/digimon_roster/test_roster.py
+	python3 tools/digimon_maps/test_island.py
 
 # Run in the development container; sources are fetched separately and pinned.
 roster-generate:

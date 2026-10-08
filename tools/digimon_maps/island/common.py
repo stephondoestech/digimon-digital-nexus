@@ -63,6 +63,12 @@ def trigger(x, y, script, var="VAR_TEMP_1", value="0"):
     return {"type": "trigger", "x": x, "y": y, "elevation": 3, "var": var, "var_value": value, "script": script}
 
 
+def tamer(gfx, x, y, script, facing, sight):
+    """A trainer NPC: walks up and battles when the player enters its line of sight."""
+    return obj(gfx, x, y, script, movement=f"MOVEMENT_TYPE_FACE_{facing}", trainer="TRAINER_TYPE_NORMAL",
+               sight=str(sight))
+
+
 def sign(x, y, script):
     return {"type": "sign", "x": x, "y": y, "elevation": 0, "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
             "script": script}
